@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!-- PAGE settings -->
+	<title> Environment - Activity</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="https://templates.pingendo.com/assets/Pingendo_favicon.ico">
+
+	<!-- Website's icon -->
+	<link rel="shortcut icon" href="../../../Home/imghome/favicon.ico" />
+
+	<!-- External Files - CSS -->
+	<link rel="stylesheet" href="botao.css">
+	<link rel="stylesheet" href="Atividades.css">
+	<link rel="icon" href="https://templates.pingendo.com/assets/Pingendo_favicon.ico">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		type="text/css">
+
+	<!-- External Files - JS -->
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+		integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script>
+	<script type="text/javascript" src="../../VerificarPalavra.js"></script>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+
+	<!-- External File - NavBar -->
+	<script>
+		$(function () {
+			console.log("Header On");
+			$.get("../headerAtividadeVocabulario.html", function (data) {
+				$("#header").append(data);
+			});
+		});
+	</script>
+
+	<!-- External File - Footer -->
+	<script>
+		$(function () {
+			console.log("Footer On");
+			$.get("../footerAtividadeVocabulario.html", function (data) {
+				$("#footer").append(data);
+			});
+		});
+	</script>
+</head>
+
+<body class="text-center" style="background-color: #FFFFFF">
+	<div id="header"></div>
+	<div class="py-5">
+		<div class="container">
+			<!-- Progress Bar -->
+			<div class="progress">
+				<div id="progressBar" class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+					style="width: 1%;">--/--</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12" style="height: 90%">
+					<!-- Carousel Starts Here -->
+					<div class="carousel slide pointer-event" data-ride="carousel" id="carousel" style="  height: 50;"
+						data-interval="false">
+						<div class="carousel-inner">
+
+							<div class="carousel-item active h-100" style=" min-height: 200px;">
+								<div class="blockquote">
+
+									<div class="py-5">
+										<div class="container">
+											<div class="row">
+												<div class="col-md-12">
+													<h1 class="text-center">Listen to the audio and choose the correct
+														word<br>
+														<audio id="boost" src="Audios/boost.mp3"></audio>
+														<br>
+														<br>
+														<div><i onclick="document.getElementById('boost').play()"
+																class="btn btn-primary fa fa-volume-up fa-lg"></i><small><b></b></small>
+														</div>
+														<br>
+														<br>
+														<a>
+															<input class="btn btn-light w-15 h-15 btn-lg" type="radio"
+																onclick="somarPontos()" name="sigla1" id="Boost1"
+																value="2">
+															<label class="btn btn-light w-15 h-15 btn-lg" for="Boost1">
+																Boost </label>
+														</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+														<a>
+															<input class="btn btn-light w-15 h-15 btn-lg" type="radio"
+																onclick="errar()" name="sigla1" id="Bust1" value="2">
+															<label class="btn btn-light w-15 h-15 btn-lg" for="Bust1">
+																Bust </label>
+														</a>
+													</h1>
+												</div>
+											</div>
+										</div>
+									</div>
+
+
+									<button class="btn btn-primary" href="#carousel" role="button" data-slide="next"
+										value="Resposta" onclick="makeProgress(1,12), controlar()"> Next </button>
+								</div>
+							</div>
+
+							<div class="carousel-item h-100" style=" min-height: 200px;">
+								<div class="blockquote">
+									<div class="py-5">
+										<div class="container">
+											<div class="row">
+												<div class="col-md-12">
+													<h1 class="text-center">Listen to the audio and choose the correct
+														word<br>
+														<audio id="toSync" src="Audios/toSync.mp3"></audio>
+														<br>
+														<br>
+														<div><i onclick="document.getElementById('toSync').play()"
+																class="btn btn-primary fa fa-volume-up fa-lg"></i><small><b></b></small>
+														</div>
+														<br>
+														<br>
+														<a>
+															<input class="btn btn-light w-15 h-15 btn-lg" type="radio"
+																onclick="errar()" name="sigla1" id="Sink1" value="2">
+															<label class="btn btn-light w-15 h-15 btn-lg" for="Sink1">
+																Sink </label>
+														</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+														<a>
+															<input class="btn btn-light w-15 h-15 btn-lg" type="radio"
+																onclick="somarPontos()" name="sigla1" id="sync1"
+																value="2">
+															<label class="btn btn-light w-15 h-15 btn-lg" for="sync1">
+																To sync </label>
+														</a>
+													</h1>
+												</div>
+											</div>
+										</div>
+									</div>
+									<button class="btn btn-primary" href="#carousel" role="button" data-slide="next"
+										value="Resposta" onclick="makeProgress(2,12), controlar()"> Next </button>
+								</div>
+							</div>
+
+							<div class="carousel-item h-100" style=" min-height: 200px;">
+								<div class="blockquote">
+									<div class="py-5">
+										<div class="container">
+											<div class="row">
+												<div class="col-md-12">
+													<h1 class="text-center">Listen to the audio and choose the correct
+														word<br>
+														<audio id="buff" src="Audios/buff.mp3"></audio>
+														<br>
+														<br>
+														<div><i onclick="document.getElementById('buff').play()"
+																class="btn btn-primary fa fa-volume-up fa-lg"></i><small><b></b></small>
+														</div>
+														<br>
+														<br>
+														<a>
+															<input class="btn btn-light w-15 h-15 btn-lg" type="radio"
+																onclick="somarPontos()" name="sigla1" id="Buff1"
+																value="2">
+															<label class="btn btn-light w-15 h-15 btn-lg" for="Buff1">
+																Buff </label>
+														</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+														<a>
+															<input class="btn btn-light w-15 h-15 btn-lg" type="radio"
+																onclick="errar()" name="sigla1" id="Path1" value="2">
+															<label class="btn btn-light w-15 h-15 btn-lg" for="Path1">
+																Path </label>
+														</a>
+													</h1>
+												</div>
+											</div>
+										</div>
+									</div>
+									<button class="btn btn-primary" href="#carousel" role="button" data-slide="next"
+										value="Resposta" onclick="makeProgress(3,12), controlar()"> Next </button>
+								</div>
+							</div>
+
+							<div class="carousel-item h-100" style=" min-height: 200px;">
+								<div class="blockquote">
+									<div class="py-5">
+										<div class="container">
+											<div class="row">
+												<div class="col-md-12">
+													<h1 class="text-center">Listen to the audio and choose the correct
+														word<br>
+														<audio id="cartoon" src="Audios/cartoon.mp3"></audio>
+														<br>
+														<br>
+														<div><i onclick="document.getElementById('cartoon').play()"
+																class="btn btn-primary fa fa-volume-up fa-lg"></i><small><b></b></small>
+														</div>
+														<br>
+														<br>
+														<a>
+															<input class="btn btn-light w-15 h-15 btn-lg" type="radio"
+																onclick="somarPontos()" name="sigla1" id="Cartoon1"
+																value="2">
+															<label class="btn btn-light w-15 h-15 btn-lg"
+																for="Cartoon1"> Cartoon </label>
+														</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+														<a>
+															<input class="btn btn-light w-15 h-15 btn-lg" type="radio"
+																onclick="errar()" name="sigla1" id="Carton1" value="2">
+															<label class="btn btn-light w-15 h-15 btn-lg" for="Carton1">
+																Carton </label>
+														</a>
+													</h1>
+												</div>
+											</div>
+										</div>
+									</div>
+									<button class="btn btn-primary" href="#carousel" role="button" data-slide="next"
+										value="Resposta" onclick="makeProgress(4,12), controlar()"> Next </button>
+								</div>
+							</div>
+
+							<div class="carousel-item h-100" style=" min-height: 200px;">
+								<div class="blockquote">
+									<div class="py-5">
+										<div class="container">
+											<div class="row">
+												<div class="col-md-12">
+													<h1 class="display-6 text-center">Choose the correct
+														option<br><br>"A mixture of smoke, gases, and chemicals,
+														especially in cities, that makes the atmosphere difficult to
+														breathe and harmful for health."<br><br><br>
+														<a>
+															<input class="btn btn-light w-15 h-15 btn-lg" type="radio"
+																onclick="somarPontos()" name="sigla1" id="certo1"
+																value="2">
+															<label class="btn btn-light w-15 h-15 btn-lg" for="certo1">
+																Smog </label>
+														</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+														<a>
+															<input class="btn btn-light w-15 h-15 btn-lg" type="radio"
+																onclick="errar()" name="sigla1" id="errado1" value="2">
+															<label class="btn btn-light w-15 h-15 btn-lg" for="errado1">
+																Boost </label>
+														</a>
+													</h1>
+												</div>
+											</div>
+										</div>
+									</div>
+									<button class="btn btn-primary" href="#carousel" role="button" data-slide="next"
+										value="Resposta" onclick="makeProgress(5,12), controlar()"> Next </button>
+								</div>
+							</div>
+
+							<div class="carousel-item h-100" style=" min-height: 200px;">
+								<div class="blockquote">
+									<div class="py-5">
+										<div class="container">
+											<div class="row">
+												<div class="col-md-12">
+													<h1 class="display-6 text-center">Choose the correct
+														option<br><br>"A situation in which there is not enough of
+														something."<br><br><br>
+														<a>
+															<input class="btn btn-light w-15 h-15 btn-lg" type="radio"
+																onclick="errar()" name="sigla1" id="errado2" value="2">
+															<label class="btn btn-light w-15 h-15 btn-lg" for="errado2">
+																Poor </label>
+														</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+														<a>
+															<input class="btn btn-light w-15 h-15 btn-lg" type="radio"
+																onclick="somarPontos()" name="sigla1" id="certo2"
+																value="2">
+															<label class="btn btn-light w-15 h-15 btn-lg" for="certo2">
+																Shortage </label>
+														</a>
+													</h1>
+												</div>
+											</div>
+										</div>
+									</div>
+									<button class="btn btn-primary" href="#carousel" role="button" data-slide="next"
+										value="Resposta" onclick="makeProgress(6,12), controlar()"> Next </button>
+								</div>
+							</div>
+
+							<div class="carousel-item h-100" style=" min-height: 200px;">
+								<div class="blockquote">
+									<div class="py-5">
+										<div class="container">
+											<div class="row">
+												<div class="col-md-12">
+													<h1 class="display-6 text-center">Choose the correct
+														option<br><br>"A piece of paper, plastic, or other material that
+														covers and protects something."<br><br><br>
+														<a>
+															<input class="btn btn-light w-15 h-15 btn-lg" type="radio"
+																onclick="errar()" name="sigla1" id="errado3" value="2">
+															<label class="btn btn-light w-15 h-15 btn-lg" for="errado3">
+																Brittle </label>
+														</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+														<a>
+															<input class="btn btn-light w-15 h-15 btn-lg" type="radio"
+																onclick="somarPontos()" name="sigla1" id="certo3"
+																value="2">
+															<label class="btn btn-light w-15 h-15 btn-lg" for="certo3">
+																Wrapper </label>
+														</a>
+													</h1>
+												</div>
+											</div>
+										</div>
+									</div>
+									<button class="btn btn-primary" href="#carousel" role="button" data-slide="next"
+										value="Resposta" onclick="makeProgress(7,12), controlar()"> Next </button>
+								</div>
+							</div>
+
+							<div class="carousel-item h-100" style=" min-height: 200px;">
+								<div class="blockquote">
+									<div class="py-5">
+										<div class="container">
+											<div class="row">
+												<div class="col-md-12">
+													<h1 class="text-center">Listen to the audio and choose the correct
+														word<br>
+														<audio id="leach" src="Audios/toLeach.mp3"></audio>
+														<br>
+														<br>
+														<div><i onclick="document.getElementById('leach').play()"
+																class="btn btn-primary fa fa-volume-up fa-lg"></i><small><b></b></small>
+														</div>
+														<br>
+														<br>
+														<a>
+															<input class="btn btn-light w-15 h-15 btn-lg" type="radio"
+																onclick="somarPontos()" name="sigla1" id="leach1"
+																value="2">
+															<label class="btn btn-light w-15 h-15 btn-lg" for="leach1">
+																To leach </label>
+														</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+														<a>
+															<input class="btn btn-light w-15 h-15 btn-lg" type="radio"
+																onclick="errar()" name="sigla1" id="Litchi1" value="2">
+															<label class="btn btn-light w-15 h-15 btn-lg" for="Litchi1">
+																Litchi </label>
+														</a>
+													</h1>
+												</div>
+											</div>
+										</div>
+									</div>
+									<button class="btn btn-primary" href="#carousel" role="button" data-slide="next"
+										value="Resposta" onclick="makeProgress(8,12), controlar()"> Next </button>
+								</div>
+							</div>
+
+							<div class="carousel-item h-100" style=" min-height: 200px;">
+								<div class="blockquote">
+									<div class="py-5">
+										<div class="container">
+											<div class="row">
+												<div class="col-md-12">
+													<h1 class="text-center">Listen to the audio and choose the correct
+														word<br>
+														<audio id="brittle" src="Audios/brittle.mp3"></audio>
+														<br>
+														<br>
+														<div><i onclick="document.getElementById('brittle').play()"
+																class="btn btn-primary fa fa-volume-up fa-lg"></i><small><b></b></small>
+														</div>
+														<br>
+														<br>
+														<a>
+															<input class="btn btn-light w-15 h-15 btn-lg" type="radio"
+																onclick="errar()" name="sigla1" id="Bridle1" value="2">
+															<label class="btn btn-light w-15 h-15 btn-lg" for="Bridle1">
+																Bridle </label>
+														</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+														<a>
+															<input class="btn btn-light w-15 h-15 btn-lg" type="radio"
+																onclick="somarPontos()" name="sigla1" id="Brittle1"
+																value="2">
+															<label class="btn btn-light w-15 h-15 btn-lg"
+																for="Brittle1"> Brittle </label>
+														</a>
+													</h1>
+												</div>
+											</div>
+										</div>
+									</div>
+									<button class="btn btn-primary" href="#carousel" role="button" data-slide="next"
+										value="Resposta" onclick="makeProgress(9,12), controlar()"> Next </button>
+								</div>
+							</div>
+
+							<div class="carousel-item h-100" style=" min-height: 200px;">
+								<div class="blockquote">
+									<div class="py-5">
+										<div class="container">
+											<div class="row">
+												<div class="col-md-12">
+													<h1 class="text-center">Listen to the audio and choose the correct
+														word<br>
+														<audio id="weep" src="Audios/toWeep.mp3"></audio>
+														<br>
+														<br>
+														<div><i onclick="document.getElementById('weep').play()"
+																class="btn btn-primary fa fa-volume-up fa-lg"></i><small><b></b></small>
+														</div>
+														<br>
+														<br>
+														<a>
+															<input class="btn btn-light w-15 h-15 btn-lg" type="radio"
+																onclick="somarPontos()" name="sigla1" id="Weep1"
+																value="2">
+															<label class="btn btn-light w-15 h-15 btn-lg" for="Weep1">
+																To weep </label>
+														</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+														<a>
+															<input class="btn btn-light w-15 h-15 btn-lg" type="radio"
+																onclick="errar()" name="sigla1" id="wipe1" value="2">
+															<label class="btn btn-light w-15 h-15 btn-lg" for="wipe1">
+																To wipe </label>
+														</a>
+													</h1>
+												</div>
+											</div>
+										</div>
+									</div>
+									<button class="btn btn-primary" href="#carousel" role="button" data-slide="next"
+										value="Resposta" onclick="makeProgress(10,12), controlar()"> Next </button>
+								</div>
+							</div>
+
+							<div class="carousel-item">
+								<div class="blockquote">
+									<div class="py-5">
+										<div class="container">
+											<div class="row">
+												<div class="col-md-12">
+													<h1 class="text-center">Listen to the audio and choose the correct
+														word<br>
+														<audio id="rise" src="Audios/toRise.mp3"></audio>
+														<br>
+														<br>
+														<div><i onclick="document.getElementById('rise').play()"
+																class="btn btn-primary fa fa-volume-up fa-lg"></i><small><b></b></small>
+														</div>
+														<br>
+														<br>
+														<a>
+															<input class="btn btn-light w-15 h-15 btn-lg" type="radio"
+																onclick="somarPontos()" name="sigla1" id="Rise1"
+																value="2">
+															<label class="btn btn-light w-15 h-15 btn-lg" for="Rise1">
+																To rise </label>
+														</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+														<a>
+															<input class="btn btn-light w-15 h-15 btn-lg" type="radio"
+																onclick="errar()" name="sigla1" id="raise1" value="2">
+															<label class="btn btn-light w-15 h-15 btn-lg" for="raise1">
+																To raise </label>
+														</a>
+													</h1>
+												</div>
+											</div>
+										</div>
+									</div>
+									<button class="btn btn-primary" href="#carousel" role="button" data-slide="next"
+										value="Resposta" onclick="makeProgress(11,12), controlar()"> Next </button>
+
+								</div>
+							</div>
+
+							<div class="carousel-item">
+								<div class="blockquote">
+									<div class="py-5">
+										<div class="container">
+											<div class="row">
+												<div class="col-md-12">
+													<h1 class="text-center">Listen to the audio and choose the correct
+														word<br>
+														<audio id="poor" src="Audios/poor.mp3"></audio>
+														<br>
+														<br>
+														<div><i onclick="document.getElementById('poor').play()"
+																class="btn btn-primary fa fa-volume-up fa-lg"></i><small><b></b></small>
+														</div>
+														<br>
+														<br>
+														<a>
+															<input class="btn btn-light w-15 h-15 btn-lg" type="radio"
+																onclick="somarPontos()" name="sigla1" id="Poor1"
+																value="2">
+															<label class="btn btn-light w-15 h-15 btn-lg" for="Poor1">
+																Poor </label>
+														</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+														<a>
+															<input class="btn btn-light w-15 h-15 btn-lg" type="radio"
+																onclick="errar()" name="sigla1" id="pour1" value="2">
+															<label class="btn btn-light w-15 h-15 btn-lg" for="pour1">
+																To pour </label>
+														</a>
+													</h1>
+												</div>
+											</div>
+										</div>
+									</div>
+									<button class="btn btn-primary" href="#carousel" role="button" data-slide="next"
+										value="Resposta" onclick="makeProgress(12,12), alertaVocabulary(12)"> Next
+									</button>
+
+								</div>
+							</div>
+
+							<div class="carousel-item">
+								<div class="blockquote">
+									<div class="py-5">
+										<div class="container">
+											<div class="row">
+												<div class="col-md-12">
+												</div>
+											</div>
+										</div>
+									</div>
+									<br><br><br><br>
+									<p style="text-align: center;"> <a class="btn btn-primary"
+											href="../../ListaDeAtividades.html"> More activities</a> </p>
+									<br><br><br><br>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Carousel Ends Here -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="footer"></div>
+</body>
+
+</html>

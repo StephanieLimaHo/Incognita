@@ -1,0 +1,50 @@
+
+label {
+	display: inline-block;
+	text-align: left;
+}
+
+input[type="radio"] {
+	display: none;
+}
+
+input[type="radio"]+label {
+	font-size: 20px;
+	border-radius: 5px;
+}
+
+#Boost1:checked+label {background: #43CD80 ;color: #fff; height: 100%}
+#Bust1:checked+label {background: #FF4040 ;color: #fff; height: 100%}
+
+#sync1:checked+label {background: #43CD80 ;color: #fff; height: 100%}
+#Sink1:checked+label {background: #FF4040 ;color: #fff; height: 100%}
+
+#Buff1:checked+label {background: #43CD80 ;color: #fff; height: 100%}
+#Path1:checked+label {background: #FF4040 ;color: #fff; height: 100%}
+
+#Carton1:checked+label {background: #FF4040 ;color: #fff; height: 100%}
+#Cartoon1:checked+label {background: #43CD80 ;color: #fff; height: 100%}
+
+#leach1:checked+label {background: #43CD80 ;color: #fff; height: 100%}
+#Litchi1:checked+label {background:#FF4040  ;color: #fff; height: 100%}
+
+#Brittle1:checked+label {background: #43CD80 ;color: #fff; height: 100%}
+#Bridle1:checked+label {background: #FF4040 ;color: #fff; height: 100%}
+
+#wipe1:checked+label {background: #FF4040 ;color: #fff; height: 100%}
+#Weep1:checked+label {background: #43CD80 ;color: #fff; height: 100%}
+
+#raise1:checked+label {background: #FF4040 ;color: #fff; height: 100%}
+#Rise1:checked+label {background: #43CD80 ;color: #fff; height: 100%}
+
+#Poor1:checked+label {background: #43CD80 ;color: #fff; height: 100%}
+#pour1:checked+label {background: #FF4040 ;color: #fff; height: 100%}
+
+#errado1:checked+label {background: #FF4040 ;color: #fff; height: 100%}
+#certo1:checked+label {background: #43CD80 ;color: #fff; height: 100%}
+
+#certo2:checked+label {background: #43CD80 ;color: #fff; height: 100%}
+#errado2:checked+label {background: #FF4040 ;color: #fff; height: 100%}
+
+#errado3:checked+label {background: #FF4040 ;color: #fff; height: 100%}
+#certo3:checked+label {background: #43CD80 ;color: #fff; height: 100%}

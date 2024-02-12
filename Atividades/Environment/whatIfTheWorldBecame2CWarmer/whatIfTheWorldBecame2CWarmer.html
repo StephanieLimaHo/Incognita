@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <!-- Page Settings -->
+  <title> Environment - Activity</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="../../../Home/imghome/favicon.ico">
+
+  <!-- External Files - CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    type="text/css">
+  <link rel="icon" href="https://templates.pingendo.com/assets/Pingendo_favicon.ico">
+  <link rel="stylesheet" type="text/css" href="whatIfTheWorldBecame2CWarmer.css">
+  <link rel="stylesheet" href="../../ScrollDownAnnimation.css">
+  <link rel="stylesheet" href="Atividades.css">
+
+
+  <!-- External Files - Java Script -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="../../VerificarPalavra.js"></script>
+  <script src="js/navbar-ontop.js"></script>
+  <script src="js/animate-in.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+
+  <!-- External File - NavBar -->
+  <script>
+    $(function () {
+
+      $.get("../headerAtividadeEnvironment.html", function (data) {
+        $("#header").append(data); console.log("NavBar On");
+      });
+
+    });
+  </script>
+  <!-- External File - Footer -->
+  <script>
+    $(function () {
+      console.log("Footer On");
+      $.get("../footerAtividadeEnvironment.html", function (data) {
+        $("#footer").append(data);
+      });
+
+    });
+  </script>
+</head>
+
+
+<body class="text-center" style="background-color: #ffffff">
+  <!-- External NavBar -->
+  <div id="header"></div>
+  <div class="py-5 section-parallax" style="background-image: url(&quot;../../img/Environment.gif&quot;);">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <section id="scroll" class="demo" style="position: relative;">
+      <a href="#atividade"><span></span><span></span><span></span></a>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  </div>
+  <div id="atividade" style="padding-top: 4.5rem;">
+    <div class="container">
+      <h1 class="text-left">What if the world became 2°C warmer? </h1>
+      <div class="row">
+      </div>
+      <div class="row">
+        <div class="col-md-8" style="height: 90%">
+          <div class="embed-responsive embed-responsive-16by9">
+            <video src="whatIfTheWorldBecame2CWarmer.mp4" class="embed-responsive-item" controls="controls"> Your
+              browser does not support HTML5 video. </video>
+          </div>
+          <br>
+          <br>
+          <!-- Progress Bar -->
+          <div class="progress">
+            <div id="progressBar" class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+              style="width: 1%;">--/--</div>
+          </div>
+          <br>
+          <!-- Carousel -->
+          <div class="carousel slide pointer-event" data-ride="carousel" id="carousel" style="height: 300px;"
+            data-interval="false">
+            <div class="carousel-inner">
+              <!-- Question 1 -->
+              <div class="carousel-item active h-100" style=" min-height: 200px;">
+                <div class="blockquote">
+                  <p class="mb-0 text-left"> <b> 1. If Earth became 2ºC warmer:</b> </p>
+                  <form style="margin-top: 10px">
+                    <p class="mb-0 text-left">
+                      <input type="radio" name="sigla1" id="alter1a" onmouseover="mouseOver()" value="2">
+                      <label for="alter1a"> <b> &nbsp; a.</b> Sea level would likely rise by 2.5 feet.</label>
+                    </p>
+                    <p class="mb-0 text-left">
+                      <input type="radio" name="sigla1" id="alter1b" onmouseover="mouseOver()" value="1">
+                      <label for="alter1b"> <b> &nbsp; b.</b> Subtropical regions migh lose nearly one-third of its
+                        fresh water. </label>
+                    </p>
+                    <p class="mb-0 text-left">
+                      <input type="radio" name="sigla1" id="alter1c" onmouseover="mouseOver()" value="2">
+                      <label for="alter1c"> <b> &nbsp; c.</b> Warmer oceans would do irreversible damage to 99% of coral
+                        reefs. </label>
+                    </p>
+
+                  </form>
+                  <button class="btn btn-primary" href="#carousel" role="button" data-slide="next" value="Resposta"
+                    onclick="verificar1(), makeProgress(1,3)"> Next </button>
+                </div>
+              </div>
+              <!-- Question 2 -->
+              <div class="carousel-item h-100" style="  min-height: 200px;">
+                <div class="blockquote">
+                  <p class="mb-0 text-left"> <b> 2. Tropical regions may experience heat waves for up to 3 months,
+                      which: </b></p>
+                  <form style="margin-top: 10px">
+                    <p class="mb-0 text-left">
+                      <input type="radio" name="sigla2" id="alter2a" onmouseover="mouseOver()" value="2">
+                      <label for="alter2a"> <b> &nbsp; a.</b> Produce more wheat and corn but less soy and rice.
+                      </label>
+                    </p>
+                    <p class="mb-0 text-left" class="waves-effect waves-green">
+                      <input type="radio" name="sigla2" id="alter2b" onmouseover="mouseOver()" value="1">
+                      <label for="alter2b"> <b> &nbsp; b.</b> Produce less wheat and corn but more soy and rice.
+                      </label>
+                    </p>
+                    <p class="mb-0 text-left">
+                      <input type="radio" name="sigla2" id="alter2c" onmouseover="mouseOver()" value="2">
+                      <label for="alter2c"> <b> &nbsp; c.</b> Produce less wheat and corn and less soy and rice.
+                      </label>
+                    </p>
+                  </form>
+                  <button class="btn btn-primary" href="#carousel" role="button" data-slide="next" value="Resposta"
+                    onclick="verificar2(), makeProgress(2,3)"> Next </button>
+                </div>
+              </div>
+              <!-- Question 3 -->
+              <div class="carousel-item h-100" style="  min-height: 300px;">
+                <div class="blockquote h-100">
+                  <p class="mb-0 text-left"> <b> 3. How will the oceans be affected? </b> &nbsp;</p>
+                  <p class="mb-0 text-left">
+                    <input type="radio" name="sigla3" id="alter3a" onmouseover="mouseOver()" value="1">
+                    <label for="alter3a"> <b> &nbsp; a.</b> Warmer oceans will do irreversible damage to 99% of coral
+                      reefs, as the reefs die off it will disrupt ecosystem for up to 9 million different species.
+                    </label>
+                  </p>
+                  <p class="mb-0 text-left">
+                    <input type="radio" name="sigla3" id="alter3b" onmouseover="mouseOver()" value="2">
+                    <label for="alter3b"> <b> &nbsp; b.</b> Warmer oceans are not something that need our attention and
+                      care. </label>
+                  </p>
+                  <p class="mb-0 text-left">
+                    <input type="radio" name="sigla3" id="alter3c" onmouseover="mouseOver()" value="2">
+                    <label for="alter3c"> <b> &nbsp; c.</b> Warmer oceans will affect just a small part of the coral
+                      reefs, the damage can be solved in a few years. </label>
+                  </p>
+                  <button class="btn btn-primary" href="#carousel" role="button" data-slide="next" value="Resposta"
+                    onclick="verificar3(), makeProgress(3,3), alerta()"> Next </button>
+                  <br>
+                  <br>
+
+
+                </div>
+              </div>
+              <!-- Score -->
+              <div class="carousel-item h-100" style="min-height: 300px;">
+                <div class="blockquote h-100">
+                  <br>
+                  <br>
+                  <p id="resposta" class="text-white"></p>
+                  <a class="btn btn-primary"
+                    href="../../VocabularyActivities/VocabularyEnvironment/VocabularyEnvironment.html"> Practice
+                    vocabulary</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END of carousel -->
+
+
+        <!-- Vocabulary -->
+        <div class="col-md-4">
+          <div class="col-md-12">
+            <div class="list-group">
+              <div class="accordion" id="accordionExample">
+                <div class="card">
+
+                  <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseOne" aria-expanded="false"
+                        aria-controls="collapseOne"><b>Amount</b></button>
+                    </h2>
+                  </div>
+                  <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="row">
+                      <!-- Aúdio a ser played -->
+                      <audio id="amount1" src="Vocabulary/amount/amount UK.mp3"></audio>
+                      <audio id="amount2" src="Vocabulary/amount/amount US.mp3"></audio>
+                      <!-- Audio Players -->
+                      <div class="col-md-6 text-right"><i onclick="document.getElementById('amount1').play()"
+                          class="fa fa-volume-up fa-lg"></i><small><b> UK</b></small></div>
+                      <div class="col-md-6 text-left"><i onclick="document.getElementById('amount2').play()"
+                          class="fa fa-volume-up fa-lg"></i><small><b> US</b></small></div>
+                      <!-- Definition -->
+                      <div class="card-body"> [<i>noun</i>] the degree to which something is a lot or a little; how much
+                        something is. </div>
+                    </div>
+                  </div>
+
+                  <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseTwo" aria-expanded="false"
+                        aria-controls="collapseTwo"><b>Boost</b></button>
+                    </h2>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="row">
+                      <!-- Aúdio a ser played -->
+                      <audio id="boost1" src="Vocabulary/boost/boost UK.mp3"></audio>
+                      <audio id="boost2" src="Vocabulary/boost/boost US.mp3"></audio>
+                      <!-- Audio Players -->
+                      <div class="col-md-6 text-right"><i onclick="document.getElementById('boost1').play()"
+                          class="fa fa-volume-up fa-lg"></i><small><b> UK</b></small></div>
+                      <div class="col-md-6 text-left"><i onclick="document.getElementById('boost2').play()"
+                          class="fa fa-volume-up fa-lg"></i><small><b> US</b></small></div>
+                      <!-- Definition -->
+                      <div class="card-body"> [<i>noun</i>] an improvement or increase, or an action that causes this.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseThree" aria-expanded="false"
+                        aria-controls="collapseThree"><b>Coastline</b></button>
+                    </h2>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                    data-parent="#accordionExample">
+                    <div class="row">
+                      <!-- Aúdio a ser played -->
+                      <audio id="coastline1" src="Vocabulary/coastline/coastline UK.mp3"></audio>
+                      <audio id="coastline2" src="Vocabulary/coastline/coastline US.mp3"></audio>
+                      <!-- Audio Players -->
+                      <div class="col-md-6 text-right"><i onclick="document.getElementById('coastline1').play()"
+                          class="fa fa-volume-up fa-lg"></i><small><b> UK</b></small></div>
+                      <div class="col-md-6 text-left"><i onclick="document.getElementById('coastline2').play()"
+                          class="fa fa-volume-up fa-lg"></i><small><b> US</b></small></div>
+                      <!-- Definition -->
+                      <div class="card-body"> [<i>noun</i>] the particular shape of the coast, especially as seen from
+                        above, from the sea, or on a map. </div>
+                    </div>
+                  </div>
+
+                  <div class="card-header" id="headingFour">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseFour" aria-expanded="false"
+                        aria-controls="collapseFour"><b>Dire</b></button>
+                    </h2>
+                  </div>
+                  <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                    <div class="row">
+                      <!-- Aúdio a ser played -->
+                      <audio id="dire1" src="Vocabulary/dire/dire UK.mp3"></audio>
+                      <audio id="dire2" src="Vocabulary/dire/dire US.mp3"></audio>
+                      <!-- Audio Players -->
+                      <div class="col-md-6 text-right"><i onclick="document.getElementById('dire1').play()"
+                          class="fa fa-volume-up fa-lg"></i><small><b> UK</b></small></div>
+                      <div class="col-md-6 text-left"><i onclick="document.getElementById('dire2').play()"
+                          class="fa fa-volume-up fa-lg"></i><small><b> US</b></small></div>
+                      <!-- Definition -->
+                      <div class="card-body"> [<i>adjective</i>] very serious or extreme.</div>
+                    </div>
+                  </div>
+
+                  <div class="card-header" id="headingFive">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseFive" aria-expanded="false"
+                        aria-controls="collapseFive"><b>Frightening</b></button>
+                    </h2>
+                  </div>
+                  <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                    <div class="row">
+                      <!-- Aúdio a ser played -->
+                      <audio id="frightening1" src="Vocabulary/frightening/frightening UK.mp3"></audio>
+                      <audio id="frightening2" src="Vocabulary/frightening/frightening US.mp3"></audio>
+                      <!-- Audio Players -->
+                      <div class="col-md-6 text-right"><i onclick="document.getElementById('frightening1').play()"
+                          class="fa fa-volume-up fa-lg"></i><small><b> UK</b></small></div>
+                      <div class="col-md-6 text-left"><i onclick="document.getElementById('frightening2').play()"
+                          class="fa fa-volume-up fa-lg"></i><small><b> US</b></small></div>
+                      <!-- Definition -->
+                      <div class="card-body"> [<i>adjective</i>] making you feel fear.</div>
+                    </div>
+                  </div>
+
+                  <div class="card-header" id="headingSix">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix"><b>To
+                          flood</b></button>
+                    </h2>
+                  </div>
+                  <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+                    <div class="row">
+                      <!-- Aúdio a ser played -->
+                      <audio id="toFlood1" src="Vocabulary/toFlood/toFlood UK.mp3"></audio>
+                      <audio id="toFlood2" src="Vocabulary/toFlood/toFlood US.mp3"></audio>
+                      <!-- Audio Players -->
+                      <div class="col-md-6 text-right"><i onclick="document.getElementById('toFlood1').play()"
+                          class="fa fa-volume-up fa-lg"></i><small><b> UK</b></small></div>
+                      <div class="col-md-6 text-left"><i onclick="document.getElementById('toFlood2').play()"
+                          class="fa fa-volume-up fa-lg"></i><small><b> US</b></small></div>
+                      <!-- Definition -->
+                      <div class="card-body"> [<i>verb</i>] to cause to fill or become covered with water, especially in
+                        a way that causes problems.</div>
+                    </div>
+                  </div>
+
+                  <div class="card-header" id="headingSeven">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseSeven" aria-expanded="false"
+                        aria-controls="collapseSeven"><b>Trend</b></button>
+                    </h2>
+                  </div>
+                  <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven"
+                    data-parent="#accordionExample">
+                    <div class="row">
+                      <!-- Aúdio a ser played -->
+                      <audio id="trend1" src="Vocabulary/trend/trend UK.mp3"></audio>
+                      <audio id="trend2" src="Vocabulary/trend/trend US.mp3"></audio>
+                      <!-- Audio Players -->
+                      <div class="col-md-6 text-right"><i onclick="document.getElementById('trend1').play()"
+                          class="fa fa-volume-up fa-lg"></i><small><b> UK</b></small></div>
+                      <div class="col-md-6 text-left"><i onclick="document.getElementById('trend2').play()"
+                          class="fa fa-volume-up fa-lg"></i><small><b> US</b></small></div>
+                      <!-- Definition -->
+                      <div class="card-body"> [<i>noun</i>] a general development or change in a situation or in the way
+                        that people are behaving</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END of vocabulary -->
+
+      </div>
+    </div>
+    <div style="height: 50px;">
+
+    </div>
+    <!-- External Footer -->
+    <div id="footer"></div>
+</body>
+
+</html>

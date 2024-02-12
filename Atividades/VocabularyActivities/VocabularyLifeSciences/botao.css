@@ -1,0 +1,54 @@
+
+label {
+	display: inline-block;
+	text-align: left;
+}
+
+input[type="radio"] {
+	display: none;
+}
+
+input[type="radio"]+label {
+	font-size: 20px;
+	border-radius: 5px;
+}
+
+green{
+	#43CD80
+}
+
+red{
+	#FF4040
+}
+
+
+/*input[type = "radio"]:checked + label{background: green; color: #fff}*/
+#Stroke1:checked+label {background: #FF4040 ;color: #fff; height: 100%}
+#Struck1:checked+label {background: #43CD80 ;color: #fff; height: 100%}
+
+#Nook1:checked+label {background: #FF4040 ;color: #fff; height: 100%}
+#Nuke1:checked+label {background: #43CD80 ;color: #fff; height: 100%}
+
+#wreak1:checked+label {background: #43CD80 ;color: #fff; height: 100%}
+#Rick1:checked+label {background: #FF4040 ;color: #fff; height: 100%}
+
+#Hunched1:checked+label {background: #43CD80 ;color: #fff; height: 100%}
+#Haunted1:checked+label {background: #FF4040 ;color: #fff; height: 100%}
+
+#slight1:checked+label {background: #43CD80 ;color: #fff; height: 100%}
+#slit1:checked+label {background: #FF4040 ;color: #fff; height: 100%}
+
+#errado1:checked+label {background: #FF4040 ;color: #fff; height: 100%}
+#certo1:checked+label {background: #43CD80 ;color: #fff; height: 100%}
+
+#certo2:checked+label {background: #43CD80 ;color: #fff; height: 100%}
+#errado2:checked+label {background: #FF4040 ;color: #fff; height: 100%}
+
+#errado3:checked+label {background: #FF4040 ;color: #fff; height: 100%}
+#certo3:checked+label {background: #43CD80 ;color: #fff; height: 100%}
+
+#errado4:checked+label {background: #FF4040 ;color: #fff; height: 100%}
+#certo4:checked+label {background: #43CD80 ;color: #fff; height: 100%}
+
+#certo5:checked+label {background: #43CD80 ;color: #fff; height: 100%}
+#errado5:checked+label {background: #FF4040 ;color: #fff; height: 100%}

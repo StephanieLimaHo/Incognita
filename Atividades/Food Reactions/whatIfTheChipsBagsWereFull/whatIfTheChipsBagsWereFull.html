@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- PAGE settings -->
+  <title> Food Reactions - Activity</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Website's Icon -->
+  <link rel="shortcut icon" href="../../../Home/imghome/favicon.ico" />
+
+
+  <!-- External Links - CSS -->
+  <link rel="icon" href="https://templates.pingendo.com/assets/Pingendo_favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    type="text/css">
+  <link rel="stylesheet" href="whatIfTheChipsBagsWereFull.css">
+  <link rel="stylesheet" href="../../ScrollDownAnnimation.css">
+  <link rel="stylesheet" href="Atividades.css">
+
+  <!-- External Links - JS -->
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="../../VerificarPalavra.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+
+
+  <!-- External File - NavBar -->
+  <script>
+    $(function () {
+
+      $.get("../headerAtividadeFoodReactions.html", function (data) {
+        $("#header").append(data); console.log("NavBar On");
+      });
+
+    });
+  </script>
+  <!-- External File - Footer -->
+  <script>
+    $(function () {
+      console.log("Footer On");
+      $.get("../footerAtividadeFoodReactions.html", function (data) {
+        $("#footer").append(data);
+      });
+
+    });
+  </script>
+</head>
+
+<body class="text-center" style="background-color: #FFFFFF">
+  <div id="header"></div>
+  <div class="py-5 section-parallax" style="background-image: url(&quot;../../img/food.gif&quot;);">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <section id="scroll" class="demo" style="position: relative;">
+      <a href="#atividade"><span></span><span></span><span></span></a>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  </div>
+  <div id="atividade"></div>
+  <div class="py-5">
+    <div class="container">
+      <h1 class="text-left">What if the chips bags were full?</h1>
+      <div class="row">
+      </div>
+      <div class="row">
+        <div class="col-md-8" style="height: 90%">
+          <div class="embed-responsive embed-responsive-16by9">
+            <video src="whatIfTheChipsBagsWereFull.mp4" class="embed-responsive-item" controls="controls"> Your browser
+              does not support HTML5 video. </video>
+          </div>
+          <br>
+          <br>
+          <!-- Progress Bar -->
+          <div class="progress">
+            <div id="progressBar" class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+              style="width: 1%;">--/--</div>
+          </div>
+          <br>
+          <!-- comeco do carrosel -->
+          <div class="carousel slide pointer-event" data-ride="carousel" id="carousel" style="  height: 300px;"
+            data-interval="false">
+            <div class="carousel-inner">
+              <!-- 1 pergunta -->
+              <div class="carousel-item active h-100" style=" min-height: 200px;">
+                <div class="blockquote">
+                  <p class="mb-0 text-left"> <b> 1. Why are potato chips bags always empty at the top?</b> </p>
+                  <form style="margin-top: 10px">
+                    <p class="mb-0 text-left">
+                      <input type="radio" name="sigla1" id="alter1a" onmouseover="mouseOver()" value="1">
+                      <label for="alter1a"> <b> &nbsp; a.</b> It’s not empty, the bags are actually packed with nitrogen
+                        gas. .</label>
+                    </p>
+                    <p class="mb-0 text-left">
+                      <input type="radio" name="sigla1" id="alter1b" onmouseover="mouseOver()" value="2">
+                      <label for="alter1b"> <b> &nbsp; b.</b> Because the company wants to make more money with the
+                        product.</label>
+                    </p>
+                    <p class="mb-0 text-left">
+                      <input type="radio" name="sigla1" id="alter1c" onmouseover="mouseOver()" value="3">
+                      <label for="alter1c"> <b> &nbsp; c.</b> Because potatoes are expensive. </label>
+                    </p>
+
+
+
+                  </form>
+                  <button class="btn btn-primary" href="#carousel" role="button" data-slide="next" value="Resposta"
+                    onclick="verificar1(), makeProgress(1,3)"> Next </button>
+                </div>
+              </div>
+              <!-- 2 pergunta -->
+              <div class="carousel-item h-100" style="  min-height: 200px;">
+                <div class="blockquote">
+                  <p class="mb-0 text-left"> <b>2. The nitrogen gas doesn't make the potato crispy. The potato turns
+                      crispy after the opening.</b>
+                  </p>
+                  <form style="margin-top: 10px">
+                    <p class="mb-0 text-left">
+                      <input type="radio" name="sigla2" id="alter2a" onmouseover="mouseOver()" value="3">
+                      <label for="alter2a"> <b> &nbsp; a.</b> True</label>
+                    </p>
+                    <p class="mb-0 text-left" class="waves-effect waves-green">
+                      <input type="radio" name="sigla2" id="alter2b" onmouseover="mouseOver()" value="1">
+                      <label for="alter2b"> <b> &nbsp; b.</b> False </label>
+                    </p>
+
+                  </form>
+                  <button class="btn btn-primary" href="#carousel" role="button" data-slide="next" value="Resposta"
+                    onclick="verificar2(), makeProgress(2,3)"> Next </button>
+                </div>
+              </div>
+              <!-- 3 pergunta -->
+              <div class="carousel-item h-100" style="  min-height: 300px;">
+                <div class="blockquote h-100">
+                  <p class="mb-0 text-left"> <b> 3. Why oxygen gas isn’t used on potato chips?</b> &nbsp;</p>
+                  <p class="mb-0 text-left">
+                    <input type="radio" name="sigla3" id="alter3a" onmouseover="mouseOver()" value="2">
+                    <label for="alter3a"> <b> &nbsp; a.</b> Oxygen makes potato chips flavor sweet.</label>
+                  </p>
+                  <p class="mb-0 text-left">
+                    <input type="radio" name="sigla3" id="alter3b" onmouseover="mouseOver()" value="1">
+                    <label for="alter3b"> <b> &nbsp; b.</b> Oxygen reacts with compounds in the chips and make them
+                      stale. </label>
+                  </p>
+                  <p class="mb-0 text-left">
+                    <input type="radio" name="sigla3" id="alter3c" onmouseover="mouseOver()" value="3">
+                    <label for="alter3c"> <b> &nbsp; c.</b> None of the above. </label>
+                  </p>
+
+                  <button class="btn btn-primary" href="#carousel" role="button" data-slide="next" value="Resposta"
+                    onclick="verificar3(), makeProgress(3,3), alerta()"> Next </button>
+                  <br>
+                  <br>
+
+
+                </div>
+              </div>
+              <!-- Pontuação -->
+              <div class="carousel-item h-100" style="  min-height: 300px;">
+                <div class="blockquote h-100">
+                  <br>
+                  <br>
+                  <p id="resposta" class="text-white"></p>
+                  <a class="btn btn-primary"
+                    href="../../VocabularyActivities/VocabularyFoodReactions/VocabularyFoodReactions.html"> Practice
+                    vocabulary</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- fim do carrosel -->
+        </div>
+        <div class="col-md-4">
+          <div class="col-md-12">
+            <div class="list-group">
+
+              <!-- Aqui começa o Vocabulário -->
+              <div class="accordion" id="accordionExample">
+                <div class="card">
+
+                  <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"><b>Crispy
+                        </b></button>
+                    </h2>
+                  </div>
+                  <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="row">
+                      <!-- Aúdio a ser played -->
+                      <audio id="crispy1" src="Vocabulary/crispy/crispy UK.mp3"></audio>
+                      <audio id="crispy2" src="Vocabulary/crispy/crispy US.mp3"></audio>
+                      <!-- Audio Players -->
+                      <div class="col-md-6 text-right"><i onclick="document.getElementById('crispy1').play()"
+                          class="fa fa-volume-up fa-lg"></i><small><b> UK</b></small></div>
+                      <div class="col-md-6 text-left"><i onclick="document.getElementById('crispy2').play()"
+                          class="fa fa-volume-up fa-lg"></i><small><b> US</b></small></div>
+                      <!-- Definition -->
+                      <div class="card-body"> [<i>adjective</i>] crispy food is hard enough to be broken easily. </div>
+                    </div>
+                  </div>
+
+                  <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseTwo" aria-expanded="false"
+                        aria-controls="collapseTwo"><b>Empty</b></button>
+                    </h2>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="row">
+                      <!-- Aúdio a ser played -->
+                      <audio id="empty1" src="Vocabulary/empty/empty UK.mp3"></audio>
+                      <audio id="empty2" src="Vocabulary/empty/empty US.mp3"></audio>
+                      <!-- Audio Players -->
+                      <div class="col-md-6 text-right"><i onclick="document.getElementById('empty1').play()"
+                          class="fa fa-volume-up fa-lg"></i><small><b> UK</b></small></div>
+                      <div class="col-md-6 text-left"><i onclick="document.getElementById('empty2').play()"
+                          class="fa fa-volume-up fa-lg"></i><small><b> US</b></small></div>
+                      <!-- Definition -->
+                      <div class="card-body"> [<i>adjective</i>] having nothing inside.</div>
+                    </div>
+                  </div>
+
+                  <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseThree" aria-expanded="false"
+                        aria-controls="collapseThree"><b>Odorless</b></button>
+                    </h2>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                    data-parent="#accordionExample">
+                    <div class="row">
+                      <!-- Aúdio a ser played -->
+                      <audio id="odorless1" src="Vocabulary/odorless/odorless UK.mp3"></audio>
+                      <audio id="odorless2" src="Vocabulary/odorless/odorless US.mp3"></audio>
+                      <!-- Audio Players -->
+                      <div class="col-md-6 text-right"><i onclick="document.getElementById('odorless1').play()"
+                          class="fa fa-volume-up fa-lg"></i><small><b> UK</b></small></div>
+                      <div class="col-md-6 text-left"><i onclick="document.getElementById('odorless2').play()"
+                          class="fa fa-volume-up fa-lg"></i><small><b> US</b></small></div>
+                      <!-- Definition -->
+                      <div class="card-body"> [<i>adjective</i>] having no smell.</div>
+                    </div>
+                  </div>
+
+                  <div class="card-header" id="headingFour">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"><b> Stale
+                        </b></button>
+                    </h2>
+                  </div>
+                  <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                    <div class="row">
+                      <!-- Aúdio a ser played -->
+                      <audio id="stale1" src="Vocabulary/stale/stale UK.mp3"></audio>
+                      <audio id="stale2" src="Vocabulary/stale/stale US.mp3"></audio>
+                      <!-- Audio Players -->
+                      <div class="col-md-6 text-right"><i onclick="document.getElementById('stale1').play()"
+                          class="fa fa-volume-up fa-lg"></i><small><b> UK</b></small></div>
+                      <div class="col-md-6 text-left"><i onclick="document.getElementById('stale2').play()"
+                          class="fa fa-volume-up fa-lg"></i><small><b> US</b></small></div>
+                      <!-- Definition -->
+                      <div class="card-body"> [<i>adjective</i>] no longer new or fresh, usually as a result of being
+                        kept for too long.</div>
+                    </div>
+                  </div>
+
+                  <div class="card-header" id="headingFive">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseFive" aria-expanded="false"
+                        aria-controls="collapseFive"><b>Tasteless</b></button>
+                    </h2>
+                  </div>
+                  <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                    <div class="row">
+                      <!-- Aúdio a ser played -->
+                      <audio id="tasteless1" src="Vocabulary/tasteless/tasteless UK.mp3"></audio>
+                      <audio id="tasteless2" src="Vocabulary/tasteless/tasteless US.mp3"></audio>
+                      <!-- Audio Players -->
+                      <div class="col-md-6 text-right"><i onclick="document.getElementById('tasteless1').play()"
+                          class="fa fa-volume-up fa-lg"></i><small><b> UK</b></small></div>
+                      <div class="col-md-6 text-left"><i onclick="document.getElementById('tasteless2').play()"
+                          class="fa fa-volume-up fa-lg"></i><small><b> US</b></small></div>
+                      <!-- Definition -->
+                      <div class="card-body"> [<i>adjective</i>] having no flavour.</div>
+                    </div>
+                  </div>
+
+                  <div class="card-header" id="headingSix">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix"><b>To
+                          chow down</b></button>
+                    </h2>
+                  </div>
+                  <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+                    <div class="row">
+                      <!-- Aúdio a ser played -->
+                      <audio id="toChowDown2" src="Vocabulary/toChowDown/toChowDown US.mp3"></audio>
+                      <!-- Audio Players -->
+                      <div class="col-md-12 text-center"><i onclick="document.getElementById('toChowDown2').play()"
+                          class="fa fa-volume-up fa-lg"></i><small><b> US</b></small></div>
+                      <!-- Definition -->
+                      <div class="card-body"> [<i>phrasal verb</i>] to eat, especially in an informal situation.</div>
+                    </div>
+                  </div>
+
+                  <div class="card-header" id="headingSeven">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven"><b>To
+                          fill</b></button>
+                    </h2>
+                  </div>
+                  <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven"
+                    data-parent="#accordionExample">
+                    <div class="row">
+                      <!-- Aúdio a ser played -->
+                      <audio id="toFill1" src="Vocabulary/toFill/toFill UK.mp3"></audio>
+                      <audio id="toFill2" src="Vocabulary/toFill/toFill US.mp3"></audio>
+                      <!-- Audio Players -->
+                      <div class="col-md-6 text-right"><i onclick="document.getElementById('toFill1').play()"
+                          class="fa fa-volume-up fa-lg"></i><small><b> UK</b></small></div>
+                      <div class="col-md-6 text-left"><i onclick="document.getElementById('toFill2').play()"
+                          class="fa fa-volume-up fa-lg"></i><small><b> US</b></small></div>
+                      <!-- Definition -->
+                      <div class="card-body"> [<i>verb</i>] to make or become full; to use empty space.
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Aqui termina o Vocabulário -->
+      </div>
+    </div>
+    <div class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="footer"></div>
+</body>
+
+</html>

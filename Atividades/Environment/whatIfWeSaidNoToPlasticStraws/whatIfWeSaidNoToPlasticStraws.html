@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Page Settings -->
+  <title> Environment - Activity</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="../../../Home/imghome/favicon.ico">
+  <link rel="shortcut icon" href="../../../Home/imghome/favicon.ico" />
+
+  <!-- External Files - CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    type="text/css">
+  <link rel="icon" href="https://templates.pingendo.com/assets/Pingendo_favicon.ico">
+  <link rel="stylesheet" type="text/css" href="whatIfWeSaidNoToPlasticStraws.css">
+  <link rel="stylesheet" href="../../ScrollDownAnnimation.css">
+  <link rel="stylesheet" href="Atividades.css">
+
+
+  <!-- External Files - Java Script -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="../../VerificarPalavra.js"></script>
+  <script src="js/navbar-ontop.js"></script>
+  <script src="js/animate-in.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+
+  <!-- External File - NavBar -->
+  <script>
+    $(function () {
+
+      $.get("../headerAtividadeEnvironment.html", function (data) {
+        $("#header").append(data); console.log("NavBar On");
+      });
+
+    });
+  </script>
+  <!-- External File - Footer -->
+  <script>
+    $(function () {
+      console.log("Footer On");
+      $.get("../footerAtividadeEnvironment.html", function (data) {
+        $("#footer").append(data);
+      });
+
+    });
+  </script>
+
+</head>
+
+<body class="text-center" style="background-color: #FFFFFF">
+  <!-- External Navbar -->
+  <div id="header"></div>
+
+  <div class="py-5 section-parallax" style="background-image: url(&quot;../../img/Environment.gif&quot;);">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <section id="scroll" class="demo" style="position: relative;">
+      <a href="#atividade"><span></span><span></span><span></span></a>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  </div>
+  <div id="atividade"></div>
+  <div class="py-5">
+    <div class="container">
+      <h1 class="text-left"> What if we said no to plastic straws? </h1>
+      <div class="row">
+      </div>
+      <div class="row">
+        <div class="col-md-8" style="height: 90%">
+          <div class="embed-responsive embed-responsive-16by9">
+            <video src="whatIfWeSaidNoToPlasticStraws.mp4" class="embed-responsive-item" controls="controls"> Your
+              browser does not support HTML5 video. </video>
+          </div>
+          <br>
+          <br>
+          <!-- Progress Bar -->
+          <div class="progress">
+            <div id="progressBar" class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+              style="width: 1%;">--/--</div>
+          </div>
+          <br>
+          <!-- comeco do carrosel -->
+          <div class="carousel slide pointer-event" data-ride="carousel" id="carousel" style="  height: 300px;"
+            data-interval="false">
+            <div class="carousel-inner">
+              <!-- 1 pergunta -->
+              <div class="carousel-item active h-100" style=" min-height: 200px;">
+                <div class="blockquote">
+                  <p class="mb-0 text-left"> <b> 1. Why did the campaign “Say no to plastic straws” gain power? </b>
+                  </p>
+                  <form style="margin-top: 10px">
+                    <p class="mb-0 text-left">
+                      <input type="radio" name="sigla1" id="alter1a" onmouseover="mouseOver()" value="1">
+                      <label for="alter1a"> <b> &nbsp; a.</b> Due to the need of a new material to produce the straws.
+                      </label>
+                    </p>
+                    <p class="mb-0 text-left">
+                      <input type="radio" name="sigla1" id="alter1b" onmouseover="mouseOver()" value="2">
+                      <label for="alter1b"> <b> &nbsp; b.</b> Due to the need of bringing down the cost in the straws
+                        production. </label>
+                    </p>
+                    <p class="mb-0 text-left">
+                      <input type="radio" name="sigla1" id="alter1c" onmouseover="mouseOver()" value="1">
+                      <label for="alter1c"> <b> &nbsp; c.</b> Due to a viral video. </label>
+                    </p>
+
+                  </form>
+                  <button class="btn btn-primary" href="#carousel" role="button" data-slide="next" value="Resposta"
+                    onclick="verificar1(), makeProgress(1,3)"> Next </button>
+                </div>
+              </div>
+              <!-- 2 pergunta -->
+              <div class="carousel-item h-100" style="  min-height: 200px;">
+                <div class="blockquote">
+                  <p class="mb-0 text-left"> <b> 2. What are plastic straws one of the major issues?</b>
+                  </p>
+                  <form style="margin-top: 10px">
+                    <p class="mb-0 text-left">
+                      <input type="radio" name="sigla2" id="alter2a" onmouseover="mouseOver()" value="2">
+                      <label for="alter2a"> <b> &nbsp; a.</b> Straws, made of plastic, take a long time to decompose.
+                      </label>
+                    </p>
+                    <p class="mb-0 text-left" class="waves-effect waves-green">
+                      <input type="radio" name="sigla2" id="alter2b" onmouseover="mouseOver()" value="1">
+                      <label for="alter2b"> <b> &nbsp; b.</b> Modern recycling machines can’t catch all straws, because
+                        they are too small. </label>
+                    </p>
+                    <p class="mb-0 text-left">
+                      <input type="radio" name="sigla2" id="alter2c" onmouseover="mouseOver()" value="3">
+                      <label for="alter2c"> <b> &nbsp; c.</b> They are too small and lightweight to be captured
+                        manually.
+                      </label>
+                    </p>
+                  </form>
+                  <button class="btn btn-primary" href="#carousel" role="button" data-slide="next" value="Resposta"
+                    onclick="verificar2(), makeProgress(2,3)"> Next </button>
+                </div>
+              </div>
+              <!-- 3 pergunta -->
+              <div class="carousel-item h-100" style="  min-height: 300px;">
+                <div class="blockquote h-100">
+                  <p class="mb-0 text-left"> <b> 3. Microplastics are plastics which can be especially used in the
+                      microwave. </b> &nbsp;</p>
+                  <p class="mb-0 text-left">
+                    <input type="radio" name="sigla3" id="alter3a" onmouseover="mouseOver()" value="2">
+                    <label for="alter3a"> <b> &nbsp; a.</b> True </label>
+                  </p>
+                  <p class="mb-0 text-left">
+                    <input type="radio" name="sigla3" id="alter3b" onmouseover="mouseOver()" value="1">
+                    <label for="alter3b"> <b> &nbsp; b.</b> False </label>
+                  </p>
+                  <button class="btn btn-primary" href="#carousel" role="button" data-slide="next" value="Resposta"
+                    onclick="verificar3(), makeProgress(3,3), alerta()"> Next </button>
+                  <br>
+                  <br>
+
+
+                </div>
+              </div>
+              <!-- Pontuação -->
+              <div class="carousel-item h-100" style="  min-height: 300px;">
+                <div class="blockquote h-100">
+                  <br>
+                  <br>
+                  <p id="resposta" class="text-white"></p>
+                  <a class="btn btn-primary"
+                    href="../../VocabularyActivities/VocabularyEnvironment/VocabularyEnvironment.html"> Practice
+                    vocabulary</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- fim do carrosel -->
+        </div>
+        <!-- Aqui começa o Vocabulário -->
+        <div class="col-md-4">
+          <div class="col-md-12">
+            <div class="list-group">
+              <div class="accordion" id="accordionExample">
+                <div class="card">
+
+                  <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseOne" aria-expanded="false"
+                        aria-controls="collapseOne"><b>Brittle</b></button>
+                    </h2>
+                  </div>
+                  <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="row">
+                      <!-- Aúdio a ser played -->
+                      <audio id="brittle1" src="Vocabulary/brittle/brittle UK.mp3"></audio>
+                      <audio id="brittle2" src="Vocabulary/brittle/brittle US.mp3"></audio>
+                      <!-- Audio Players -->
+                      <div class="col-md-6 text-right"><i onclick="document.getElementById('brittle1').play()"
+                          class="fa fa-volume-up fa-lg"></i><small><b> UK</b></small></div>
+                      <div class="col-md-6 text-left"><i onclick="document.getElementById('brittle2').play()"
+                          class="fa fa-volume-up fa-lg"></i><small><b> US</b></small></div>
+                      <!-- Definition -->
+                      <div class="card-body"> [<i>adjective</i>] delicate and easily broken. </div>
+                    </div>
+                  </div>
+
+                  <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseTwo" aria-expanded="false"
+                        aria-controls="collapseTwo"><b>Fleck</b></button>
+                    </h2>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="row">
+                      <!-- Aúdio a ser played -->
+                      <audio id="fleck1" src="Vocabulary/fleck/fleck UK.mp3"></audio>
+                      <audio id="fleck2" src="Vocabulary/fleck/fleck US.mp3"></audio>
+                      <!-- Audio Players -->
+                      <div class="col-md-6 text-right"><i onclick="document.getElementById('fleck1').play()"
+                          class="fa fa-volume-up fa-lg"></i><small><b> UK</b></small></div>
+                      <div class="col-md-6 text-left"><i onclick="document.getElementById('fleck2').play()"
+                          class="fa fa-volume-up fa-lg"></i><small><b> US</b></small></div>
+                      <!-- Definition -->
+                      <div class="card-body"> [<i>noun</i>] a small mark or spot.</div>
+                    </div>
+                  </div>
+                  <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseThree" aria-expanded="false"
+                        aria-controls="collapseThree"><b>Lid</b></button>
+                    </h2>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                    data-parent="#accordionExample">
+                    <div class="row">
+                      <!-- Aúdio a ser played -->
+                      <audio id="lid1" src="Vocabulary/lid/lid UK.mp3"></audio>
+                      <audio id="lid2" src="Vocabulary/lid/lid US.mp3"></audio>
+                      <!-- Audio Players -->
+                      <div class="col-md-6 text-right"><i onclick="document.getElementById('lid1').play()"
+                          class="fa fa-volume-up fa-lg"></i><small><b> UK</b></small></div>
+                      <div class="col-md-6 text-left"><i onclick="document.getElementById('lid2').play()"
+                          class="fa fa-volume-up fa-lg"></i><small><b> US</b></small></div>
+                      <!-- Definition -->
+                      <div class="card-body"> [<i>noun</i>] a cover on a container, that can be lifted up or removed.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card-header" id="headingFour">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseFour" aria-expanded="false"
+                        aria-controls="collapseFour"><b>Outcry</b></button>
+                    </h2>
+                  </div>
+                  <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                    <div class="row">
+                      <!-- Aúdio a ser played -->
+                      <audio id="outcry1" src="Vocabulary/outcry/outcry UK.mp3"></audio>
+                      <audio id="outcry2" src="Vocabulary/outcry/outcry US.mp3"></audio>
+                      <!-- Audio Players -->
+                      <div class="col-md-6 text-right"><i onclick="document.getElementById('outcry1').play()"
+                          class="fa fa-volume-up fa-lg"></i><small><b> UK</b></small></div>
+                      <div class="col-md-6 text-left"><i onclick="document.getElementById('outcry2').play()"
+                          class="fa fa-volume-up fa-lg"></i><small><b> US</b></small></div>
+                      <!-- Definition -->
+                      <div class="card-body"> [<i>noun</i>] a strong expression of anger and disapproval about
+                        something, made by a group of people or by the public.</div>
+                    </div>
+                  </div>
+                  <div class="card-header" id="headingFive">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseFive" aria-expanded="false"
+                        aria-controls="collapseFive"><b>Reliance</b></button>
+                    </h2>
+                  </div>
+                  <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                    <div class="row">
+                      <!-- Aúdio a ser played -->
+                      <audio id="reliance1" src="Vocabulary/reliance/reliance UK.mp3"></audio>
+                      <audio id="reliance2" src="Vocabulary/reliance/reliance US.mp3"></audio>
+                      <!-- Audio Players -->
+                      <div class="col-md-6 text-right"><i onclick="document.getElementById('reliance1').play()"
+                          class="fa fa-volume-up fa-lg"></i><small><b> UK</b></small></div>
+                      <div class="col-md-6 text-left"><i onclick="document.getElementById('reliance2').play()"
+                          class="fa fa-volume-up fa-lg"></i><small><b> US</b></small></div>
+                      <!-- Definition -->
+                      <div class="card-body"> [<i>noun</i>] the state of depending on or trusting in something or
+                        someone.</div>
+                    </div>
+                  </div>
+                  <div class="card-header" id="headingSix">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix"><b>To
+                          flush</b></button>
+                    </h2>
+                  </div>
+                  <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+                    <div class="row">
+                      <!-- Aúdio a ser played -->
+                      <audio id="toFlush1" src="Vocabulary/toFlush/toFlush UK.mp3"></audio>
+                      <audio id="toFlush2" src="Vocabulary/toFlush/toFlush US.mp3"></audio>
+                      <!-- Audio Players -->
+                      <div class="col-md-6 text-right"><i onclick="document.getElementById('toFlush1').play()"
+                          class="fa fa-volume-up fa-lg"></i><small><b> UK</b></small></div>
+                      <div class="col-md-6 text-left"><i onclick="document.getElementById('toFlush2').play()"
+                          class="fa fa-volume-up fa-lg"></i><small><b> US</b></small></div>
+                      <!-- Definition -->
+                      <div class="card-body"> [<i>verb</i>] to get rid of something by putting it in the toilet and
+                        operating the toilet.</div>
+                    </div>
+                  </div>
+                  <div class="card-header" id="headingSeven">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven"><b>To
+                          gain</b></button>
+                    </h2>
+                  </div>
+                  <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven"
+                    data-parent="#accordionExample">
+                    <div class="row">
+                      <!-- Aúdio a ser played -->
+                      <audio id="toGain1" src="Vocabulary/toGain/toGain UK.mp3"></audio>
+                      <audio id="toGain2" src="Vocabulary/toGain/toGain US.mp3"></audio>
+                      <!-- Audio Players -->
+                      <div class="col-md-6 text-right"><i onclick="document.getElementById('toGain1').play()"
+                          class="fa fa-volume-up fa-lg"></i><small><b> UK</b></small></div>
+                      <div class="col-md-6 text-left"><i onclick="document.getElementById('toGain2').play()"
+                          class="fa fa-volume-up fa-lg"></i><small><b> US</b></small></div>
+                      <!-- Definition -->
+                      <div class="card-body"> [<i>verb</i>] to get something that is useful, that gives you an
+                        advantage, or that is in some way positive, especially over a period of time. </div>
+                    </div>
+                  </div>
+                  <div class="card-header" id="headingEight">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight"><b>To pivot
+                        </b></button>
+                    </h2>
+                  </div>
+                  <div id="collapseEight" class="collapse" aria-labelledby="headingEight"
+                    data-parent="#accordionExample">
+                    <div class="row">
+                      <!-- Aúdio a ser played -->
+                      <audio id="toPivot1" src="Vocabulary/toPivot/toPivot UK.mp3"></audio>
+                      <audio id="toPivot2" src="Vocabulary/toPivot/toPivot US.mp3"></audio>
+                      <!-- Audio Players -->
+                      <div class="col-md-6 text-right"><i onclick="document.getElementById('toPivot1').play()"
+                          class="fa fa-volume-up fa-lg"></i><small><b> UK</b></small></div>
+                      <div class="col-md-6 text-left"><i onclick="document.getElementById('toPivot2').play()"
+                          class="fa fa-volume-up fa-lg"></i><small><b> US</b></small></div>
+                      <!-- Definition -->
+                      <div class="card-body"> [<i>verb</i>] to turn or twist.</div>
+                    </div>
+                  </div>
+                  <div class="card-header" id="headingNine">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine"><b>To resemble
+                        </b></button>
+                    </h2>
+                  </div>
+                  <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordionExample">
+                    <div class="row">
+                      <!-- Aúdio a ser played -->
+                      <audio id="toResemble1" src="Vocabulary/toResemble/toResemble UK.mp3"></audio>
+                      <audio id="toResemble2" src="Vocabulary/toResemble/toResemble US.mp3"></audio>
+                      <!-- Audio Players -->
+                      <div class="col-md-6 text-right"><i onclick="document.getElementById('toResemble1').play()"
+                          class="fa fa-volume-up fa-lg"></i><small><b> UK</b></small></div>
+                      <div class="col-md-6 text-left"><i onclick="document.getElementById('toResemble2').play()"
+                          class="fa fa-volume-up fa-lg"></i><small><b> US</b></small></div>
+                      <!-- Definition -->
+                      <div class="card-body"> [<i>verb</i>] to look like or be like someone or something.</div>
+                    </div>
+                  </div>
+
+                  <div class="card-header" id="headingTen">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen"><b>To sweep
+                        </b></button>
+                    </h2>
+                  </div>
+                  <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordionExample">
+                    <div class="row">
+                      <!-- Aúdio a ser played -->
+                      <audio id="toSweep1" src="Vocabulary/toSweep/toSweep UK.mp3"></audio>
+                      <audio id="toSweep2" src="Vocabulary/toSweep/toSweep US.mp3"></audio>
+                      <!-- Audio Players -->
+                      <div class="col-md-6 text-right"><i onclick="document.getElementById('toSweep1').play()"
+                          class="fa fa-volume-up fa-lg"></i><small><b> UK</b></small></div>
+                      <div class="col-md-6 text-left"><i onclick="document.getElementById('toSweep2').play()"
+                          class="fa fa-volume-up fa-lg"></i><small><b> US</b></small></div>
+                      <!-- Definition -->
+                      <div class="card-body"> [<i>verb</i>] to remove or take something in a particular direction, esp.
+                        suddenly and with force.</div>
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Aqui termina o vocabulario -->
+      </div>
+    </div>
+  </div>
+  <div id="footer"></div>
+</body>
+
+</html>

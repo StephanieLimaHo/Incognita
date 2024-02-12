@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- PAGE settings -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Food Reactions - Activity</title>
+
+  <!-- Website's Icon -->
+  <link rel="shortcut icon" href="../../../Home/imghome/favicon.ico" />
+  <link rel="icon" href="https://templates.pingendo.com/assets/Pingendo_favicon.ico">
+
+  <!-- External Links - CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    type="text/css">
+  <link rel="stylesheet" href="../../ScrollDownAnnimation.css">
+  <link rel="stylesheet" href="whatIfWeAteMoldyBread.css">
+  <link rel="stylesheet" href="Atividades.css">
+
+  <!-- External Links - JS -->
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="../../VerificarPalavra.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+  <!-- External File - NavBar -->
+  <script>
+    $(function () {
+
+      $.get("../headerAtividadeFoodReactions.html", function (data) {
+        $("#header").append(data); console.log("NavBar On");
+      });
+
+    });
+  </script>
+  <!-- External File - Footer -->
+  <script>
+    $(function () {
+      console.log("Footer On");
+      $.get("../footerAtividadeFoodReactions.html", function (data) {
+        $("#footer").append(data);
+      });
+
+    });
+  </script>
+</head>
+
+<body class="text-center" style="background-color: #FFFFFF">
+  <div id="header"></div>
+  <div class="py-5 section-parallax" style="background-image: url(&quot;../../img/food.gif&quot;);">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <section id="scroll" class="demo" style="position: relative;">
+      <a href="#atividade"><span></span><span></span><span></span></a>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  </div>
+  <div id="atividade"></div>
+  <div class="py-5">
+    <div class="container">
+      <h1 class="text-left">What if we ate moldy bread?</h1>
+      <div class="row">
+      </div>
+      <div class="row">
+        <div class="col-md-8" style="height: 90%">
+          <div class="embed-responsive embed-responsive-16by9">
+            <video src="whatIfWeAteMoldyBread.mp4" class="embed-responsive-item" controls="controls"> Your browser does
+              not support HTML5 video. </video>
+          </div>
+          <br>
+          <br>
+          <!-- Progress Bar -->
+          <div class="progress">
+            <div id="progressBar" class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+              style="width: 1%;">--/--</div>
+          </div>
+          <br>
+          <!-- comeco do carrosel -->
+          <div class="carousel slide pointer-event" data-ride="carousel" id="carousel" style="  height: 300px;"
+            data-interval="false">
+            <div class="carousel-inner">
+              <!-- 1 pergunta -->
+              <div class="carousel-item active h-100" style=" min-height: 200px;">
+                <div class="blockquote">
+                  <p class="mb-0 text-left"> <b> 1. Can we eat the bread if we put away the moldy part?</b> </p>
+                  <form style="margin-top: 10px">
+                    <p class="mb-0 text-left">
+                      <input type="radio" name="sigla1" id="alter1a" onmouseover="mouseOver()" value="2">
+                      <label for="alter1a"> <b> &nbsp; a.</b> Yes, it’s safe because only the moldy part is
+                        dangerous.</label>
+                    </p>
+                    <p class="mb-0 text-left">
+                      <input type="radio" name="sigla1" id="alter1b" onmouseover="mouseOver()" value="1">
+                      <label for="alter1b"> <b> &nbsp; b.</b> No, the mold spreads everywhere, even if you can't see
+                        it</label>
+                    </p>
+                    <p class="mb-0 text-left">
+                      <input type="radio" name="sigla1" id="alter1c" onmouseover="mouseOver()" value="3">
+                      <label for="alter1c"> <b> &nbsp; c.</b> It depends on how great the mold has spread, if it's a
+                        small quantity, there's no problem. </label>
+                    </p>
+
+
+
+                  </form>
+                  <button class="btn btn-primary" href="#carousel" role="button" data-slide="next" value="Resposta"
+                    onclick="verificar1(), makeProgress(1,3)"> Next </button>
+                </div>
+              </div>
+              <!-- 2 pergunta -->
+              <div class="carousel-item h-100" style="  min-height: 200px;">
+                <div class="blockquote">
+                  <p class="mb-0 text-left"> <b>2. All kinds of fungi are safe to be eaten.</b>
+                  </p>
+                  <form style="margin-top: 10px">
+                    <p class="mb-0 text-left">
+                      <input type="radio" name="sigla2" id="alter2a" onmouseover="mouseOver()" value="3">
+                      <label for="alter2a"> <b> &nbsp; a.</b> True</label>
+                    </p>
+                    <p class="mb-0 text-left" class="waves-effect waves-green">
+                      <input type="radio" name="sigla2" id="alter2b" onmouseover="mouseOver()" value="1">
+                      <label for="alter2b"> <b> &nbsp; b.</b> False </label>
+                    </p>
+                  </form>
+                  <button class="btn btn-primary" href="#carousel" role="button" data-slide="next" value="Resposta"
+                    onclick="verificar2(), makeProgress(2,3)"> Next </button>
+                </div>
+              </div>
+              <!-- 3 pergunta -->
+              <div class="carousel-item h-100" style="  min-height: 300px;">
+                <div class="blockquote h-100">
+                  <p class="mb-0 text-left"> <b> 3. Mark the incorrect statement.</b> &nbsp;</p>
+                  <p class="mb-0 text-left">
+                    <input type="radio" name="sigla3" id="alter3a" onmouseover="mouseOver()" value="1">
+                    <label for="alter3a"> <b> &nbsp; a.</b> There are harmless mold, so if someone eats the right one,
+                      the person must be fine.</label>
+                  </p>
+                  <p class="mb-0 text-left">
+                    <input type="radio" name="sigla3" id="alter3b" onmouseover="mouseOver()" value="2">
+                    <label for="alter3b"> <b> &nbsp; b.</b> If someone eats food with any quantity of mold, the person
+                      is going to die. </label>
+                  </p>
+                  <button class="btn btn-primary" href="#carousel" role="button" data-slide="next" value="Resposta"
+                    onclick="verificar3(), makeProgress(3,3), alerta()"> Next </button>
+                  <br>
+                  <br>
+
+
+                </div>
+              </div>
+              <!-- Pontuação -->
+              <div class="carousel-item h-100" style="  min-height: 300px;">
+                <div class="blockquote h-100">
+                  <br>
+                  <br>
+                  <p id="resposta" class="text-white"></p>
+                  <a class="btn btn-primary"
+                    href="../../VocabularyActivities/VocabularyFoodReactions/VocabularyFoodReactions.html"> Practice
+                    vocabulary</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- fim do carrosel -->
+        </div>
+        <div class="col-md-4">
+          <div class="col-md-12">
+            <div class="list-group">
+
+              <!-- Aqui começa o Vocabulário -->
+              <div class="accordion" id="accordionExample">
+                <div class="card">
+
+                  <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseOne" aria-expanded="false"
+                        aria-controls="collapseOne"><b>Fuzzy</b></button>
+                    </h2>
+                  </div>
+                  <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="row">
+                      <!-- Aúdio a ser played -->
+                      <audio id="fuzzy1" src="Vocabulary/fuzzy/fuzzy UK.mp3"></audio>
+                      <audio id="fuzzy2" src="Vocabulary/fuzzy/fuzzy US.mp3"></audio>
+                      <!-- Audio Players -->
+                      <div class="col-md-6 text-right"><i onclick="document.getElementById('fuzzy1').play()"
+                          class="fa fa-volume-up fa-lg"></i><small><b> UK</b></small></div>
+                      <div class="col-md-6 text-left"><i onclick="document.getElementById('fuzzy2').play()"
+                          class="fa fa-volume-up fa-lg"></i><small><b> US</b></small></div>
+                      <!-- Definition -->
+                      <div class="card-body"> [<i>adjective</i>] covered with light, loose hairs or fibers. </div>
+                    </div>
+                  </div>
+
+                  <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseTwo" aria-expanded="false"
+                        aria-controls="collapseTwo"><b>Gamble</b></button>
+                    </h2>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="row">
+                      <!-- Aúdio a ser played -->
+                      <audio id="gamble1" src="Vocabulary/gamble/gamble UK.mp3"></audio>
+                      <audio id="gamble2" src="Vocabulary/gamble/gamble US.mp3"></audio>
+                      <!-- Audio Players -->
+                      <div class="col-md-6 text-right"><i onclick="document.getElementById('gamble1').play()"
+                          class="fa fa-volume-up fa-lg"></i><small><b> UK</b></small></div>
+                      <div class="col-md-6 text-left"><i onclick="document.getElementById('gamble2').play()"
+                          class="fa fa-volume-up fa-lg"></i><small><b> US</b></small></div>
+                      <!-- Definition -->
+                      <div class="card-body"> [<i>noun</i>] an action that involves risk but that could have a good
+                        result.</div>
+                    </div>
+                  </div>
+
+                  <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseThree" aria-expanded="false"
+                        aria-controls="collapseThree"><b>Harmless</b></button>
+                    </h2>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                    data-parent="#accordionExample">
+                    <div class="row">
+                      <!-- Aúdio a ser played -->
+                      <audio id="harmless1" src="Vocabulary/harmless/harmless UK.mp3"></audio>
+                      <audio id="harmless2" src="Vocabulary/harmless/harmless US.mp3"></audio>
+                      <!-- Audio Players -->
+                      <div class="col-md-6 text-right"><i onclick="document.getElementById('harmless1').play()"
+                          class="fa fa-volume-up fa-lg"></i><small><b> UK</b></small></div>
+                      <div class="col-md-6 text-left"><i onclick="document.getElementById('harmless2').play()"
+                          class="fa fa-volume-up fa-lg"></i><small><b> US</b></small></div>
+                      <!-- Definition -->
+                      <div class="card-body"> [<i>adjective</i>] not able or not likely to cause harm.</div>
+                    </div>
+                  </div>
+
+                  <div class="card-header" id="headingFour">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"><b>Loaf
+                        </b></button>
+                    </h2>
+                  </div>
+                  <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                    <div class="row">
+                      <!-- Aúdio a ser played -->
+                      <audio id="loaf1" src="Vocabulary/loaf/loaf UK.mp3"></audio>
+                      <audio id="loaf2" src="Vocabulary/loaf/loaf US.mp3"></audio>
+                      <!-- Audio Players -->
+                      <div class="col-md-6 text-right"><i onclick="document.getElementById('loaf1').play()"
+                          class="fa fa-volume-up fa-lg"></i><small><b> UK</b></small></div>
+                      <div class="col-md-6 text-left"><i onclick="document.getElementById('loaf2').play()"
+                          class="fa fa-volume-up fa-lg"></i><small><b> US</b></small></div>
+                      <!-- Definition -->
+                      <div class="card-body"> [<i>noun</i>] bread that is shaped and baked in a single piece and can be
+                        sliced for eating.</div>
+                    </div>
+                  </div>
+
+                  <div class="card-header" id="headingFive">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseFive" aria-expanded="false"
+                        aria-controls="collapseFive"><b>Mold</b></button>
+                    </h2>
+                  </div>
+                  <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                    <div class="row">
+                      <!-- Aúdio a ser played -->
+                      <audio id="mold1" src="Vocabulary/mold/mold UK.mp3"></audio>
+                      <audio id="mold2" src="Vocabulary/mold/mold US.mp3"></audio>
+                      <!-- Audio Players -->
+                      <div class="col-md-6 text-right"><i onclick="document.getElementById('mold1').play()"
+                          class="fa fa-volume-up fa-lg"></i><small><b> UK</b></small></div>
+                      <div class="col-md-6 text-left"><i onclick="document.getElementById('mold2').play()"
+                          class="fa fa-volume-up fa-lg"></i><small><b> US</b></small></div>
+                      <!-- Definition -->
+                      <div class="card-body"> [<i>noun</i>] a soft green, gray, or black growth that develops on old
+                        food or on objects that have been left too long in warm, slightly wet places.</div>
+                    </div>
+                  </div>
+
+                  <div class="card-header" id="headingSix">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseSix" aria-expanded="false"
+                        aria-controls="collapseSix"><b>Mushroom</b></button>
+                    </h2>
+                  </div>
+                  <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+                    <div class="row">
+                      <!-- Aúdio a ser played -->
+                      <audio id="mushroom1" src="Vocabulary/mushroom/mushroom UK.mp3"></audio>
+                      <audio id="mushroom2" src="Vocabulary/mushroom/mushroom US.mp3"></audio>
+                      <!-- Audio Players -->
+                      <div class="col-md-6 text-right"><i onclick="document.getElementById('mushroom1').play()"
+                          class="fa fa-volume-up fa-lg"></i><small><b> UK</b></small></div>
+                      <div class="col-md-6 text-left"><i onclick="document.getElementById('mushroom2').play()"
+                          class="fa fa-volume-up fa-lg"></i><small><b> US</b></small></div>
+                      <!-- Definition -->
+                      <div class="card-body"> [<i>noun</i>] a fungus with a round top and short stem.</div>
+                    </div>
+                  </div>
+
+                  <div class="card-header" id="headingSeven">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseSeven" aria-expanded="false"
+                        aria-controls="collapseSeven"><b>Root</b></button>
+                    </h2>
+                  </div>
+                  <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven"
+                    data-parent="#accordionExample">
+                    <div class="row">
+                      <!-- Aúdio a ser played -->
+                      <audio id="root1" src="Vocabulary/root/root UK.mp3"></audio>
+                      <audio id="root2" src="Vocabulary/root/root US.mp3"></audio>
+                      <!-- Audio Players -->
+                      <div class="col-md-6 text-right"><i onclick="document.getElementById('root1').play()"
+                          class="fa fa-volume-up fa-lg"></i><small><b> UK</b></small></div>
+                      <div class="col-md-6 text-left"><i onclick="document.getElementById('root2').play()"
+                          class="fa fa-volume-up fa-lg"></i><small><b> US</b></small></div>
+                      <!-- Definition -->
+                      <div class="card-body"> [<i>noun</i>] the part of a plant that grows down into the earth to get
+                        water and food and holds the plant firm in the ground.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card-header" id="headingEight">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseEight" aria-expanded="false"
+                        aria-controls="collapseEight"><b>Teeming</b></button>
+                    </h2>
+                  </div>
+                  <div id="collapseEight" class="collapse" aria-labelledby="headingEight"
+                    data-parent="#accordionExample">
+                    <div class="row">
+                      <!-- Aúdio a ser played -->
+                      <audio id="teeming1" src="Vocabulary/teeming/teeming UK.mp3"></audio>
+                      <audio id="teeming2" src="Vocabulary/teeming/teeming US.mp3"></audio>
+                      <!-- Audio Players -->
+                      <div class="col-md-6 text-right"><i onclick="document.getElementById('teeming1').play()"
+                          class="fa fa-volume-up fa-lg"></i><small><b> UK</b></small></div>
+                      <div class="col-md-6 text-left"><i onclick="document.getElementById('teeming2').play()"
+                          class="fa fa-volume-up fa-lg"></i><small><b> US</b></small></div>
+                      <!-- Definition -->
+                      <div class="card-body"> [<i>adjective</i>] filled with the activity of many people or things.
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Aqui termina o Vocabulário -->
+      </div>
+    </div>
+    <div class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="footer"></div>
+</body>
+
+</html>

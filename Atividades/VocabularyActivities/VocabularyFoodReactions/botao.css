@@ -1,0 +1,55 @@
+
+label {
+	display: inline-block;
+	text-align: left;
+}
+
+input[type="radio"] {
+	display: none;
+}
+
+input[type="radio"]+label {
+	font-size: 20px;
+	border-radius: 5px;
+}
+
+green{
+	#43CD80
+}
+
+red{
+	#FF4040
+}
+
+
+/*input[type = "radio"]:checked + label{background: green; color: #fff}*/
+#Layer1:checked+label {background: #FF4040 ;color: #fff; height: 100%}
+#Lawyer1:checked+label {background: #43CD80 ;color: #fff; height: 100%}
+
+#Guzzle1:checked+label {background: #43CD80 ;color: #fff; height: 100%}
+#Gazelle1:checked+label {background: #FF4040 ;color: #fff; height: 100%}
+
+#Measly1:checked+label {background: #FF4040 ;color: #fff; height: 100%}
+#Messily1:checked+label {background: #43CD80 ;color: #fff; height: 100%}
+
+#Mold1:checked+label {background: #FF4040 ;color: #fff; height: 100%}
+#Meld1:checked+label {background: #43CD80 ;color: #fff; height: 100%}
+
+#Root1:checked+label {background: #43CD80 ;color: #fff; height: 100%}
+#Rut1:checked+label {background: #FF4040 ;color: #fff; height: 100%}
+
+#fill1:checked+label {background: #FF4040 ;color: #fff; height: 100%}
+#Feel1:checked+label {background: #43CD80 ;color: #fff; height: 100%}
+
+
+
+#errado1:checked+label {background: #FF4040 ;color: #fff; height: 100%}
+#certo1:checked+label {background: #43CD80 ;color: #fff; height: 100%}
+
+#certo2:checked+label {background: #43CD80 ;color: #fff; height: 100%}
+#errado2:checked+label {background: #FF4040 ;color: #fff; height: 100%}
+
+
+
+
+

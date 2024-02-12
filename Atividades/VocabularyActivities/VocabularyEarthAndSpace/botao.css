@@ -1,0 +1,84 @@
+label {
+	display: inline-block;
+	text-align: left;
+}
+
+input[type="radio"] {
+	display: none;
+}
+
+input[type="radio"]+label {
+	font-size: 20px;
+	border-radius: 5px;
+}
+
+green{
+	#43CD80
+}
+
+red{
+	#FF4040
+}
+
+
+/*input[type = "radio"]:checked + label{background: green; color: #fff}*/
+#spew1:checked+label {background: #43CD80 ;color: #fff; height: 100%}
+#spill1:checked+label {background: #FF4040 ;color: #fff; height: 100%}
+
+#perish1:checked+label {background: #FF4040 ;color: #fff; height: 100%}
+#parish1:checked+label {background: #43CD80 ;color: #fff; height: 100%}
+
+#switch1:checked+label {background: #43CD80 ;color: #fff; height: 100%}
+#sweet1:checked+label {background: #FF4040 ;color: #fff; height: 100%}
+
+#rear1:checked+label {background: #FF4040 ;color: #fff; height: 100%}
+#rare1:checked+label {background: #43CD80 ;color: #fff; height: 100%}
+
+#surge1:checked+label {background: #FF4040 ;color: #fff; height: 100%}
+#serge1:checked+label {background: #43CD80 ;color: #fff; height: 100%}
+
+#gloom1:checked+label {background: #43CD80 ;color: #fff; height: 100%}
+#glum1:checked+label {background: #FF4040 ;color: #fff; height: 100%}
+
+#bright1:checked+label {background: #43CD80 ;color: #fff; height: 100%}
+#brit1:checked+label {background: #FF4040 ;color: #fff; height: 100%}
+
+#remnant1:checked+label {background: #FF4040 ;color: #fff; height: 100%}
+#ruminant1:checked+label {background: #43CD80 ;color: #fff; height: 100%}
+
+#outer1:checked+label {background: #43CD80 ;color: #fff; height: 100%}
+#alter1:checked+label {background: #FF4040 ;color: #fff; height: 100%}
+
+#feature1:checked+label {background: #FF4040 ;color: #fff; height: 100%}
+#future1:checked+label {background: #43CD80 ;color: #fff; height: 100%}
+
+
+#errado1:checked+label {background: #FF4040 ;color: #fff; height: 100%}
+#certo1:checked+label {background: #43CD80 ;color: #fff; height: 100%}
+
+#certo2:checked+label {background: #43CD80 ;color: #fff; height: 100%}
+#errado2:checked+label {background: #FF4040 ;color: #fff; height: 100%}
+
+#errado3:checked+label {background: #FF4040 ;color: #fff; height: 100%}
+#certo3:checked+label {background: #43CD80 ;color: #fff; height: 100%}
+
+#errado4:checked+label {background: #FF4040 ;color: #fff; height: 100%}
+#certo4:checked+label {background: #43CD80 ;color: #fff; height: 100%}
+
+#certo5:checked+label {background: #43CD80 ;color: #fff; height: 100%}
+#errado5:checked+label {background: #FF4040 ;color: #fff; height: 100%}
+
+#certo6:checked+label {background: #43CD80 ;color: #fff; height: 100%}
+#errado6:checked+label {background: #FF4040 ;color: #fff; height: 100%}
+
+#errado7:checked+label {background: #FF4040 ;color: #fff; height: 100%}
+#certo7:checked+label {background: #43CD80 ;color: #fff; height: 100%}
+
+#certo8:checked+label {background: #43CD80 ;color: #fff; height: 100%}
+#errado8:checked+label {background: #FF4040 ;color: #fff; height: 100%}
+
+#errado9:checked+label {background: #FF4040 ;color: #fff; height: 100%}
+#certo9:checked+label {background: #43CD80 ;color: #fff; height: 100%}
+
+
+

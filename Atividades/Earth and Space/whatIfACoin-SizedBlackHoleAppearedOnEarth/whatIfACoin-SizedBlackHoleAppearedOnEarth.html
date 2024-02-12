@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- PAGE settings -->
+  <title> Earth and Space - Activity</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Website's Icon -->
+  <link rel="shortcut icon" href="../../../Home/imghome/favicon.ico" />
+
+  <!-- External Links - CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    type="text/css">
+  <link rel="icon" href="https://templates.pingendo.com/assets/Pingendo_favicon.ico">
+  <link rel="stylesheet" href="whatIfACoin-SizedBlackHoleAppearedOnEarth.css">
+  <link rel="stylesheet" href="../../ScrollDownAnnimation.css">
+  <link rel="stylesheet" href="Atividades.css">
+
+  <!-- External Links - JS -->
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="../../VerificarPalavra.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+
+  <!-- External File - NavBar -->
+  <script>
+    $(function () {
+
+      $.get("../headerAtividadeEarthAndSpace.html", function (data) {
+        $("#header").append(data); console.log("NavBar On");
+      });
+
+    });
+  </script>
+  <!-- External File - Footer -->
+  <script>
+    $(function () {
+      console.log("Footer On");
+      $.get("../footerAtividadeEarthAndSpace.html", function (data) {
+        $("#footer").append(data);
+      });
+
+    });
+  </script>
+</head>
+
+<body class="text-center" style="background-color: #FFFFFF">
+
+  <!-- External Navbar -->
+  <div id="header"></div>
+
+  <div class="py-5 section-parallax" style="background-image: url(&quot;../../img/universo.gif&quot;);">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <section id="scroll" class="demo" style="position: relative;">
+      <a href="#atividade"><span></span><span></span><span></span></a>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  </div>
+  <div id="atividade">
+    <div class="py-5">
+      <div class="container">
+        <h1 class="text-left">What if a coin-sized black hole appeared on earth?</h1>
+        <div class="row">
+        </div>
+        <div class="row">
+          <div class="col-md-8" style="height: 90%">
+            <div class="embed-responsive embed-responsive-16by9">
+              <video src="whatIfACoin-sizedBlackHoleAppearedOnEarth.mp4" class="embed-responsive-item"
+                controls="controls"> Your browser does not support HTML5 video. </video>
+            </div>
+            <br>
+            <br>
+            <!-- Progress Bar -->
+            <div class="progress">
+              <div id="progressBar" class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                style="width: 1%;">--/--</div>
+            </div>
+            <br>
+            <!-- Carousel -->
+            <div class="carousel slide pointer-event" data-ride="carousel" id="carousel" style="  height: 300px;"
+              data-interval="false">
+              <div class="carousel-inner">
+                <!-- Question 1 -->
+                <div class="carousel-item active h-100" style=" min-height: 200px;">
+                  <div class="blockquote">
+                    <p class="mb-0 text-left"> <b> 1. Mark the incorrect statements about black holes. </b> </p>
+                    <form style="margin-top: 10px">
+                      <p class="mb-0 text-left">
+                        <input type="radio" name="sigla1" id="alter1a" onmouseover="mouseOver()" value="3">
+                        <label for="alter1a"> <b> &nbsp; a.</b> The smaller a black hole is, the more Hawking radiation
+                          it
+                          releases.</label>
+                      </p>
+                      <p class="mb-0 text-left">
+                        <input type="radio" name="sigla1" id="alter1b" onmouseover="mouseOver()" value="1">
+                        <label for="alter1b"> <b> &nbsp; b.</b> One black hole is capable of consuming the entire
+                          universe.</label>
+                      </p>
+                      <p class="mb-0 text-left">
+                        <input type="radio" name="sigla1" id="alter1c" onmouseover="mouseOver()" value="2">
+                        <label for="alter1c"> <b> &nbsp; c.</b> They aren't holes, they are huge amount of mass.</label>
+                      </p>
+
+                    </form>
+                    <button class="btn btn-primary" href="#carousel" role="button" data-slide="next" value="Resposta"
+                      onclick="verificar1(), makeProgress(1,3)"> Next </button>
+                  </div>
+                </div>
+                <!-- Question 2 -->
+                <div class="carousel-item h-100" style="  min-height: 200px;">
+                  <div class="blockquote">
+                    <p class="mb-0 text-left"> <b>2. True or false - The black hole with the diameter of a coin.</b>
+                      <br> I. Earth would immediately fall into the black hole.
+                      <br> II. Whatever mass of Earth was left would collapse into a disk of hot rock
+                      <br> III. Humanity would survive and Earth would orbit the black hole.
+                      <br> IV. The gravitational pulse of the black hole would be one billion billion times greater than
+                      our planet does.
+                    </p>
+                    <form style="margin-top: 10px">
+                      <p class="mb-0 text-left">
+                        <input type="radio" name="sigla2" id="alter2a" onmouseover="mouseOver()" value="0">
+                        <label for="alter2a"> <b> &nbsp; a.</b> Only I is false.</label>
+                      </p>
+                      <p class="mb-0 text-left" class="waves-effect waves-green">
+                        <input type="radio" name="sigla2" id="alter2b" onmouseover="mouseOver()" value="0">
+                        <label for="alter2b"> <b> &nbsp; b.</b> Only I and IV are true. </label>
+                      </p>
+                      <p class="mb-0 text-left">
+                        <input type="radio" name="sigla2" id="alter2c" onmouseover="mouseOver()" value="1">
+                        <label for="alter2c"> <b> &nbsp; c.</b> Only II and IV are true. </label>
+                      </p>
+                    </form>
+                    <button class="btn btn-primary" href="#carousel" role="button" data-slide="next" value="Resposta"
+                      onclick="verificar2(), makeProgress(2,3)"> Next </button>
+                  </div>
+                </div>
+                <!-- Question 3 -->
+                <div class="carousel-item h-100" style="  min-height: 300px;">
+                  <div class="blockquote h-100">
+                    <p class="mb-0 text-left"> <b> 3. According to the video, which is the best-case scenario for
+                        humanity?</b> &nbsp;</p>
+                    <p class="mb-0 text-left">
+                      <input type="radio" name="sigla3" id="alter3a" onmouseover="mouseOver()" value="3">
+                      <label for="alter3a"> <b> &nbsp; a.</b> Scenario one, the black hole with the diameter of a coin.
+                      </label>
+                    </p>
+                    <p class="mb-0 text-left">
+                      <input type="radio" name="sigla3" id="alter3b" onmouseover="mouseOver()" value="2">
+                      <label for="alter3b"> <b> &nbsp; b.</b> In both cases humanity can not live.</label>
+                    </p>
+                    <p class="mb-0 text-left">
+                      <input type="radio" name="sigla3" id="alter3c" onmouseover="mouseOver()" value="1">
+                      <label for="alter3c"> <b> &nbsp; c.</b> Scenario two, the black hole with the mass of a coin.
+                      </label>
+                    </p>
+                    <button class="btn btn-primary" href="#carousel" role="button" data-slide="next" value="Resposta"
+                      onclick="verificar3(), makeProgress(3,3), alerta()"> Next </button>
+                    <br>
+                    <br>
+
+
+                  </div>
+                </div>
+                <!-- Score -->
+                <div class="carousel-item h-100" style="  min-height: 300px;text-align: center">
+                  <div class="blockquote h-100">
+                    <br>
+                    <br>
+                    <p id="resposta" class="text-white"></p>
+                    <a class="btn btn-primary"
+                      href="../../VocabularyActivities/VocabularyEarthAndSpace/VocabularyEarthAndSpace.html"> Practice
+                      vocabulary</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- END of carousel -->
+          </div>
+          <!-- Vocabulary -->
+          <div class="col-md-4">
+            <div class="col-md-12">
+              <div class="list-group">
+
+                <div class="accordion" id="accordionExample">
+                  <div class="card">
+                    <div class="card-header" id="headingOne">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                          data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"><b>Chunk
+                          </b></button>
+                      </h2>
+                    </div>
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                      <div class="row">
+                        <!-- Aúdio a ser played -->
+                        <audio id="chunk1" src="Vocabulary/chunk/chunk UK.mp3"></audio>
+                        <audio id="chunk2" src="Vocabulary/chunk/chunk US.mp3"></audio>
+                        <!-- Audio Players -->
+                        <div class="col-md-6 text-right"><i onclick="document.getElementById('chunk1').play()"
+                            class="fa fa-volume-up fa-lg"></i><small><b> UK</b></small></div>
+                        <div class="col-md-6 text-left"><i onclick="document.getElementById('chunk2').play()"
+                            class="fa fa-volume-up fa-lg"></i><small><b> US</b></small></div>
+                        <!-- Definition -->
+                        <div class="card-body"> [<i>noun</i>] a part of something, especially a large part. </div>
+                      </div>
+                    </div>
+                    <div class="card-header" id="headingTwo">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                          data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><b>Despite
+                          </b></button>
+                      </h2>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                      <div class="row">
+                        <!-- Aúdio a ser played -->
+                        <audio id="despite1" src="Vocabulary/despite/despite UK.mp3"></audio>
+                        <audio id="despite2" src="Vocabulary/despite/despite US.mp3"></audio>
+                        <!-- Audio Players -->
+                        <div class="col-md-6 text-right"><i onclick="document.getElementById('despite1').play()"
+                            class="fa fa-volume-up fa-lg"></i><small><b> UK</b></small></div>
+                        <div class="col-md-6 text-left"><i onclick="document.getElementById('despite2').play()"
+                            class="fa fa-volume-up fa-lg"></i><small><b> US</b></small></div>
+                        <!-- Definition -->
+                        <div class="card-body"> [<i>preposition</i>] without being influenced or prevented by.</div>
+                      </div>
+                    </div>
+                    <div class="card-header" id="headingThree">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                          data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><b>TNT
+                          </b></button>
+                      </h2>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                      data-parent="#accordionExample">
+                      <div class="row">
+                        <!-- Aúdio a ser played -->
+                        <audio id="TNT1" src="Vocabulary/TNT/TNT UK.mp3"></audio>
+                        <audio id="TNT2" src="Vocabulary/TNT/TNT US.mp3"></audio>
+                        <!-- Audio Players -->
+                        <div class="col-md-6 text-right"><i onclick="document.getElementById('TNT1').play()"
+                            class="fa fa-volume-up fa-lg"></i><small><b> UK</b></small></div>
+                        <div class="col-md-6 text-left"><i onclick="document.getElementById('TNT2').play()"
+                            class="fa fa-volume-up fa-lg"></i><small><b> US</b></small></div>
+                        <!-- Definition -->
+                        <div class="card-body"> [<i>noun</i>] a powerful, yellow explosive substance.</div>
+                      </div>
+                    </div>
+                    <div class="card-header" id="headingFour">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                          data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"><b>To
+                            rip</b></button>
+                      </h2>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                      data-parent="#accordionExample">
+                      <div class="row">
+                        <!-- Aúdio a ser played -->
+                        <audio id="toRip1" src="Vocabulary/toRip/toRip UK.mp3"></audio>
+                        <audio id="toRip2" src="Vocabulary/toRip/toRip US.mp3"></audio>
+                        <!-- Audio Players -->
+                        <div class="col-md-6 text-right"><i onclick="document.getElementById('toRip1').play()"
+                            class="fa fa-volume-up fa-lg"></i><small><b> UK</b></small></div>
+                        <div class="col-md-6 text-left"><i onclick="document.getElementById('toRip2').play()"
+                            class="fa fa-volume-up fa-lg"></i><small><b> US</b></small></div>
+                        <!-- Definition -->
+                        <div class="card-body"> [<i>verb</i>] to tear something quickly and with force, or to break
+                          apart
+                          something.</div>
+                      </div>
+                    </div>
+
+                    <div class="card-header" id="headingFive">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                          data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive"><b>To slam
+                          </b></button>
+                      </h2>
+                    </div>
+                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
+                      data-parent="#accordionExample">
+                      <div class="row">
+                        <!-- Aúdio a ser played -->
+                        <audio id="toSlam1" src="Vocabulary/toSlam/toSlam UK.mp3"></audio>
+                        <audio id="toSlam2" src="Vocabulary/toSlam/toSlam US.mp3"></audio>
+                        <!-- Audio Players -->
+                        <div class="col-md-6 text-right"><i onclick="document.getElementById('toSlam1').play()"
+                            class="fa fa-volume-up fa-lg"></i><small><b> UK</b></small></div>
+                        <div class="col-md-6 text-left"><i onclick="document.getElementById('toSlam2').play()"
+                            class="fa fa-volume-up fa-lg"></i><small><b> US</b></small></div>
+                        <!-- Definition -->
+                        <div class="card-body"> [<i>noun</i>] a situation where roads in a town become so blocked by
+                          cars
+                          that it is impossible for any traffic to move.</div>
+                      </div>
+                    </div>
+
+                    <div class="card-header" id="headingSix">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                          data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix"><b>To spew
+                          </b></button>
+                      </h2>
+                    </div>
+                    <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+                      <div class="row">
+                        <!-- Aúdio a ser played -->
+                        <audio id="toSpew1" src="Vocabulary/toSpew/toSpew UK.mp3"></audio>
+                        <audio id="toSpew2" src="Vocabulary/toSpew/toSpew US.mp3"></audio>
+                        <!-- Audio Players -->
+                        <div class="col-md-6 text-right"><i onclick="document.getElementById('toSpew1').play()"
+                            class="fa fa-volume-up fa-lg"></i><small><b> UK</b></small></div>
+                        <div class="col-md-6 text-left"><i onclick="document.getElementById('toSpew2').play()"
+                            class="fa fa-volume-up fa-lg"></i><small><b> US</b></small></div>
+                        <!-- Definition -->
+                        <div class="card-body"> [<i>verb</i>] to flow or let out in large amounts.</div>
+                      </div>
+                    </div>
+                    <div class="card-header" id="headingSeven">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                          data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven"><b>Unharmed
+                          </b></button>
+                      </h2>
+                    </div>
+                    <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven"
+                      data-parent="#accordionExample">
+                      <div class="row">
+                        <!-- Aúdio a ser played -->
+                        <audio id="unharmed1" src="Vocabulary/unharmed/unharmed UK.mp3"></audio>
+                        <audio id="unharmed2" src="Vocabulary/unharmed/unharmed US.mp3"></audio>
+                        <!-- Audio Players -->
+                        <div class="col-md-6 text-right"><i onclick="document.getElementById('unharmed1').play()"
+                            class="fa fa-volume-up fa-lg"></i><small><b> UK</b></small></div>
+                        <div class="col-md-6 text-left"><i onclick="document.getElementById('unharmed2').play()"
+                            class="fa fa-volume-up fa-lg"></i><small><b> US</b></small></div>
+                        <!-- Definition -->
+                        <div class="card-body"> [<i>adjective</i>] not hurt or damaged.
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END of vocabulary -->
+        </div>
+      </div>
+      <div class="py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- External Footer -->
+  <div id="footer"></div>
+</body>
+
+</html>

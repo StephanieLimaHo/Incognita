@@ -1,0 +1,55 @@
+label {
+    display: inline-block;
+    text-align: left;
+  }
+
+  input[type="radio"] {
+    display: none;
+  }
+
+  input[type="radio"]+label {
+    font-size: 20px;
+    border-radius: 5px;
+    height: 35px;
+    width: 540px;
+  }
+
+  /*input[type = "radio"]:checked + label{background: green; color: #fff}*/
+  #alter1a:checked+label {
+    background: #FF4040;
+    color: #fff;
+    height: 100%
+  }
+
+  #alter1b:checked+label {
+    background: #43CD80;
+    color: #fff;
+    height: 100%
+  }
+
+  #alter1c:checked+label {
+    background: #FF4040;
+    color: #fff;
+    height: 100%
+  }
+
+  #alter2a:checked+label {
+    background: #FF4040;
+    color: #fff;
+    height: 100%
+  }
+
+  #alter2b:checked+label {
+    background: #43CD80;
+    color: #fff;
+    height: 100%
+  }
+
+
+  .droptarget {
+    float: right;
+    width: 350px;
+    height: 30px;
+    text-align: left;
+    border-bottom: 2px solid #aaaaaa;
+  }
